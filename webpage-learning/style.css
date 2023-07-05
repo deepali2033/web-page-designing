@@ -68,4 +68,12 @@ ul:hover li
  {
      animation-delay: 1.6s;
  }
+ ul li:nth-child(6)
+ {
+     animation-delay: 2.0s;
+ }
+ ul li:nth-child(7)
+ {
+     animation-delay: 2.4s;
+ }
   
