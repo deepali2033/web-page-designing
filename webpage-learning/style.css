@@ -1,0 +1,71 @@
+body
+{
+    margin: 0%;
+    padding: 0%;
+    font-family:' serif';
+    background-color: rgb(61, 59, 59);
+    color: white;   
+
+}
+.center
+{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+ul{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+}
+ul li{
+    list-style: none;
+    font-size: 6em;
+    font-weight:bold;
+    letter-spacing: 10px;
+    filter: blur(0%);
+}
+ul:hover li
+{
+
+     animation: deepi1 2s  infinite;
+     
+    
+
+}
+@keyframes deepi1
+ { 
+    0%{
+       transform: rotate(0deg) translatey(0px);
+       opacity: 1;
+       filter: 1px;
+    }
+    100%{
+        transform: rotate(50deg) translatey(-200px);
+         opacity: 0;
+         filter: 20px;
+    }
+ }
+ ul li:nth-child(1)
+ {
+     animation-delay: 0s;
+ }
+ ul li:nth-child(2)
+ {
+     animation-delay: .4s;
+ }
+ ul li:nth-child(3)
+ {
+     animation-delay: .8s;
+ }
+ ul li:nth-child(4)
+ {
+     animation-delay: 1.2s;
+ }
+ ul li:nth-child(5)
+ {
+     animation-delay: 1.6s;
+ }
+  
