@@ -1,0 +1,15 @@
+body {
+    background-color: aqua;
+    }
+.class1{
+    background-color: yellow;
+}
+.class2{
+    background-color: blue;
+}
+.class3{
+    background-color: green;
+}
+#id{
+    font-size: x-large;
+}
