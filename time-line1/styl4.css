@@ -1,0 +1,37 @@
+body{
+    margin-left: 30px;
+    padding: 0px;
+    background-color: rgb(4, 4, 47);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    color: white;
+    background-color: rgb(14, 144, 195);
+    width: 130px;
+    border-radius: 5px;
+    padding-left: 5px;
+    
+}
+h3{
+  color: rgb(61, 109, 214);
+}
+p{
+  color: white;
+  
+}
+#box{
+  padding: 20px 50px 20px 15px;
+  border-left: 2px solid black;
+  
+}
+.box1{
+  padding-top:10px;
+  padding-bottom: 10px;
+  border: 1px blue;
+}
+.box1 :hover{
+  background-color: rgb(17, 17, 48);
+  
+}
