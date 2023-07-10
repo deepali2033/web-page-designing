@@ -1,35 +1,5 @@
 body{
-    background: rgb(245, 236, 236);
-    
-}
-#chatbox{
-    align-items: center;
-    background-color: rgb(37, 38, 39);
-    width:300px;
-    height: 300px;
-    overflow: auto;
-    
-    padding-left: 10px;
-    border-radius: 10px;
-}
-.class{
-    background-color: black;
-    border-radius:5px;
-    color: white;
-    padding-left: 5px;
-    width: 200px;}
-p{
-    padding-left: 5px;
-    padding-top:10px ;
-    padding-bottom: 10px;
-}
-    
-.name{
-    color:brown ;
-}
-.name2{
-    color: blueviolet;
-}
-footer{
-    z-index:1;
+    margin: 0;
+    padding: 0;
+    background-color: ;
 }
