@@ -8,41 +8,84 @@
       body{
          margin: 0;
          padding:0;
+         background-image: url(img1.jpg);
 
       }
       .box{
-            width: 500px;
+            width: 300px;
             height: 500px;
-            background: rgb(179, 218, 235);
+            background: rgb(234, 239, 193);
             padding: 25px;
             margin: 20px auto;
             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.3);
             border-radius: 10px;
             transition: 0.5s ease;
+            color: rgb(24, 83, 14);
+            
       }
    form{
       width: 300px;
+      
+   }
+   legend{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: large;
+      text-align: center;
+   }
+   .box1{
+      height:100px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+   }
+   .box2{
+      height: 70px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+   }
+   .box3{
+      height:auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      
+   }
+   .box4{
+      height: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+   }
+   textarea{
+      width:300px ;
+      height: 60px;
+      background-color: rgb(25, 95, 33);
+      color: rgb(198, 237, 192);
+   }
+   button{
+      margin-top: 4px;
+      margin-bottom:3px ;
+      margin-right: 20px;
+      background-color: rgb(10, 56, 10);
+      color: rgb(182, 233, 190);
    }
     </style>
 </head>
 <body>
    <div class="box">
     <form>
-     <fieldset >
+     <fieldset class="box1" >
        <legend>Login</legend>
         <label>Username*</label><br>
         <input type="text"><br>
         <label>Password*</label><br>
         <input type="text">
      </fieldset>
-     <fieldset>
+     <fieldset class="box2">
         <legend>Gender*</legend>
         <label>Male</label>
         <input type="radio" name="gender">
         <label>Female</label>
         <input type="radio" name="gender">
      </fieldset>
-     <fieldset>
+     <fieldset class="box3">
         <legend>Programming Skill</legend>
         <label>Java</label>
         <input type="checkbox">
@@ -51,16 +94,16 @@
         <label>C#</label>
         <input type="checkbox">
      </fieldset>
-     <fieldset>
+     <fieldset class="box4">
         <legend>Fruit</legend>
-        Choose a fruit:<select>
+        Choose a fruit: <select>
                           <option>Banana</option>
                           <option>Apple</option>
                           <option>Kiwi</option>
                           <option>Berry</option>
-                       </select>
+                        </select>
      </fieldset>
-     <textarea placeholder="Type your comment.." width="700px" height="500px"> </textarea><br>
+     <textarea placeholder="Type your comment.."> </textarea><br>
      <button type="submit">SEND</button>
      <button type="submit">RESET</button>
 
