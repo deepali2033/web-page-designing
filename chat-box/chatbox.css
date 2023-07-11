@@ -23,6 +23,29 @@ body{
 }
 .chatlogs::-webkit-scrollbar{
     width: 10px;
-    background: rgb(57, 122, 16);
+    
 }
-.chat{}
+.chatlogs::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: (0,0,0,0.25);
+}
+.chat{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.chat .chat-message{
+    width: 80%;
+    padding: 0px 15px 20px 15px;
+    margin: 0px 10px 0;
+    border-radius: 0px 0px 10px 10px;
+    color: #fff;
+    font-size: 20px;
+}
+.friend .chat-message{
+    background: black;
+}
+.self .chat-message{
+    background: black;
+}
