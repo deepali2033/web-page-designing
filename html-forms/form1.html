@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(img.frm.jpg);
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            background: rgb(179, 218, 235);
+            padding: 25px;
+            margin: 20px auto;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            transition: 0.5s ease;
+        }
+            
+
+    </style>
 </head>
 <body>
+  <div class="box">
     <h1>Student Registration Form</h1>
     <p>Fill in this form to register</p>
     <form>
@@ -13,7 +33,7 @@
         First Name: <input type="text" placeholder="Enter your first name"> <br><br>
         Last Name: <input type="text" placeholder="Enter your last name"><br><br>
         E-mail: <input type="email" placeholder="Enter your e-mail name"><br><br>
-        First Name: <input type="date"><br><br>
+        Birth Date: <input type="date"><br><br>
         Set Username: <input type="text" placeholder="set Username"><br><br>
         Set Password: <input type="text" placeholder="set Password"><br><br>
         Gender:<br>
@@ -31,5 +51,7 @@
 
         
     </form>
+ </div>
+  
 </body>
 </html>
