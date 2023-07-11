@@ -2,6 +2,8 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(30, 24, 24);
+    height: 1000px;
 }
 .chatbox{
     width: 500px;
@@ -12,6 +14,7 @@ body{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.3);
     border-radius: 10px;
     transition: 0.5s ease;
+    background-color: aqua;
 }
 .chatlogs{
     padding: 10px;
@@ -78,3 +81,55 @@ body{
     display: flex;
     align-items: flex-start;
 }
+.chat-form textarea{
+    background-color: #fbfbfb;
+    width: 76%;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+
+}
+.chat-form textarea:focus{
+    background-color: #fff;
+}
+.chatlogs::-webkit-scrollbar{
+    border-radius: 5px;
+    background: rgba(0,0,0,0.384);
+}
+.chat-form textarea::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.384);
+}
+.chat-form button{
+    background: black;
+    padding: 10px 15px 11px 15px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    margin: 0px 10px 0px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background .2s ease;
+
+    
+    -webkit-transition: background .2s ease;
+    -moz-transition: background .2s ease;
+    -o-transition: background .2s ease;
+
+    
+}
+.chat-form button:hover{
+    color: darkred;
+
+}
+.chatbox{
+    transform: scale(0.8);
+}
+.chatbox:hover{
+    transform: scale(0.75);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+    
