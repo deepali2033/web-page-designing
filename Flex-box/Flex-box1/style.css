@@ -6,10 +6,10 @@ body{
 }
 .parent{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
    justify-content: space-around;
-   flex-wrap: wrap;
-   align-items: stretch;
+ 
+   
     
 }
 img{
