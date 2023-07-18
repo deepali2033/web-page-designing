@@ -1,13 +1,13 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .container {
   border: 2px solid black;
   width: 550px;
-  height: 600 px;
-  /* margin-left: auto;
-  margin-right: auto; */
+  height: 280px;
+  /* 600-4-25*/
   margin: 40px auto;
 }
 h1 {
@@ -34,10 +34,13 @@ h1::after {
   border: 1px black;
 }
 
-h6 {
+.text {
   text-transform: uppercase;
   color: grey;
   margin-top: 0;
+  float: right;
+  font-size: 10px;
+  padding-top: 10px;
 }
 
 h4 {
@@ -63,7 +66,7 @@ button {
   background-color: black;
   color: white;
   width: 550px;
-  height: 25px;
+  height: 40px;
 }
 button:hover {
   background-color: white;
@@ -96,4 +99,35 @@ button:hover {
 }
 .fifth {
   background-color: rgb(179, 9, 142);
+}
+.price {
+  float: left;
+}
+
+.product-info {
+  width: 178px;
+  /* background-color: brown; */
+  float: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  padd
+}
+.product-details {
+  /* background-color: blue; */
+  width: 178px;
+  float: right;
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.product-descraption {
+  clear: both;
+}
+img {
+  float: left;
+  width: 150px;
+  height: 202px;
+}
+ul li{
+  line-height: 1.8;
 }

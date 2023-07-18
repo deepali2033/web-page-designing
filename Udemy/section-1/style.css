@@ -3,20 +3,28 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.container {
+  width: 1200px;
+}
 h1 {
   font-size: 26px;
   font-style: italic;
 }
 header {
-  background-color: rgb(209, 212, 215);
-  border-top: 4px solid rgb(46, 109, 181);
-  padding: 20px 46px;
+  background-color: rgb(215, 218, 221);
+  border-top: 4px solid rgb(12, 91, 125);
+  padding: 0 46px;
 }
 aside {
-  background-color: rgb(222, 225, 228);
-  border-top: 5px solid rgb(46, 109, 181);
+  background-color: rgb(190, 196, 202);
+  border-top: 5px solid rgb(22, 129, 143);
   border-bottom: 5px solid rgb(46, 109, 181);
-  width: 500px;
+
+  /* background-color: brown; */
+  float: right;
+  padding: 50px 40px;
+  box-sizing: border-box;
+  margin-top: 20px;
 }
 aside ul li {
   list-style: none;
@@ -27,11 +35,12 @@ aside ul li {
   font-family: sans-serif;
 }
 article {
-  margin-left: 20px;
+  margin-left: 0;
+  width: 700px;
+  /* background-color: aqua; */
+  float: left;
 }
-p {
-  line-height: 1;
-}
+
 h4 {
   text-align: center;
 }
@@ -42,4 +51,28 @@ h4 {
 aside ul li a {
   text-decoration: none;
   color: rgb(30, 114, 187);
+}
+.first {
+  float: left;
+}
+.navigation {
+  float: right;
+  margin-top: 20px;
+}
+.clear {
+  float: both;
+}
+*/ .author-img {
+  float: left;
+}
+.author {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+footer {
+  clear: both;
+  background-color: rgb(215, 218, 221);
+  border-bottom: 4px solid rgb(128, 155, 167);
 }
