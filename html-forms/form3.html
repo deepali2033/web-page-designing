@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+    <style>
+      body {
+        background-image: url("img1.jpg");
+        align-content: center;
+      }
+      form {
+        background: rgba(0, 0, 0, 0.7);
+        color: aliceblue;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        border: 2px solid rgb(240, 232, 232);
+        border-radius: 2px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
     <form>
-        <fieldset>
-            <legend>Personal Details</legend>
-            <label>Salutation</label><br>
-            <select>
-               <option></option>
-               <option></option>
-               <option></option>
-            </select><br><br>
-            First name: <input type="text"><br><br>
-            Last name: <input type="text"><br><br>
-            Gender:<input type="radio" name="gender">Male
-             <input type="radio" name="gender">Female<br><br>
-            Email: <input type="email"><br><br>
-            Date of birth: <input type="date"><br><br>
-            <label>Address:</label><br>
-            <textarea width="500px" height="500px"></textarea><br><br>
-            <input type="submit">
-        </fieldset>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label>Category</label>
+        <select>
+          <option>SC</option>
+          <option>OBS</option>
+          <option>ST</option></select
+        ><br /><br />
+        First name: <input type="text" /><br /><br />
+        Last name: <input type="text" /><br /><br />
+        Gender:<input type="radio" name="gender" />Male
+        <input type="radio" name="gender" />Female<br /><br />
+        Email: <input type="email" /><br /><br />
+        Date of birth: <input type="date" /><br /><br />
+        <label>Address:</label><br />
+        <textarea width="500px" height="500px"></textarea><br /><br />
+        <input type="submit" />
+      </fieldset>
     </form>
-</body>
+  </body>
 </html>
