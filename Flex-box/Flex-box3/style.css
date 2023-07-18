@@ -13,7 +13,8 @@ h1 {
 .main-div {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
   margin: 0 50px;
 }
 .min-box {
@@ -30,7 +31,9 @@ h1 {
 }
 .box2 {
   background-color: brown;
+  flex-basis: 200px;
 }
 .box3 {
   background-color: blue;
+  flex-basis: ;
 }
