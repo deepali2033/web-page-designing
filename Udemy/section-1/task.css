@@ -110,7 +110,6 @@ button:hover {
   float: left;
   padding-left: 20px;
   padding-top: 10px;
-  padd
 }
 .product-details {
   /* background-color: blue; */
@@ -128,6 +127,6 @@ img {
   width: 150px;
   height: 202px;
 }
-ul li{
+ul li {
   line-height: 1.8;
 }
