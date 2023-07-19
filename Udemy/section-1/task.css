@@ -6,9 +6,17 @@ body {
 .container {
   border: 2px solid black;
   width: 550px;
-  height: 280px;
+  /* height: 280px; */
   /* 600-4-25*/
   margin: 40px auto;
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr;
+  grid-template-rows: 29px 200px 40px;
+  column-gap: 20px;
+}
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 h1 {
   font-size: 15px;
@@ -16,7 +24,7 @@ h1 {
   font-family: sans-serif;
   background-color: rgb(227, 229, 231);
   text-align: center;
-  height: 30px;
+  /* height: 30px; */
   margin: auto;
   padding-top: 10px;
 }
@@ -60,12 +68,14 @@ a:hover {
 ul li {
   list-style-type: square;
 }
-button {
+.button {
   text-transform: uppercase;
   background-color: black;
   color: white;
-  width: 550px;
-  height: 40px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  /* width: 550px; */
+  /* height: 40px; */
 }
 button:hover {
   background-color: white;
@@ -100,24 +110,6 @@ button:hover {
 }
 .fifth {
   background-color: rgb(179, 9, 142);
-}
-
-.product-info {
-  /* width: 178px;
-  /* background-color: brown; */
-  flex: 1;
-}
-.product-details {
-  /* background-color: blue; */
-  flex: 1;
-}
-.product-descraption {
-  clear: both;
-}
-img {
-  /* float: left;
-  width: 150px;
-  height: 202px; */
 }
 
 .price-detail {
