@@ -24,23 +24,22 @@ h1::after {
   content: "sale";
   background-color: red;
   color: aliceblue;
-  width: 54px;
-  height: 17px;
-  font-size: 16px;
-  display: inline-block;
+  width: 45px;
+  height: 11px;
+  font-size: 10px;
+  /* display: flex; */
   position: relative;
-  top: -20px;
-  right: 460px;
+  top: -22px;
+  right: 452px;
+  padding: 2px;
   border: 1px black;
 }
 
 .text {
   text-transform: uppercase;
   color: grey;
-  margin-top: 0;
-  float: right;
+
   font-size: 10px;
-  padding-top: 10px;
 }
 
 h4 {
@@ -75,13 +74,15 @@ button:hover {
 }
 .color-box {
   display: flex;
-  justify-content: flex-start;
-  margin-top: 15px;
+  align-items: center;
+
+  margin-top: 8px;
+  margin-bottom: 8px;
+  gap: 10px;
 }
 .color {
   width: 13px;
   height: 13px;
-  margin-right: 15px;
 }
 .first {
   background-color: black;
@@ -100,33 +101,32 @@ button:hover {
 .fifth {
   background-color: rgb(179, 9, 142);
 }
-.price {
-  float: left;
-}
 
 .product-info {
-  width: 178px;
+  /* width: 178px;
   /* background-color: brown; */
-  float: left;
-  padding-left: 20px;
-  padding-top: 10px;
+  flex: 1;
 }
 .product-details {
   /* background-color: blue; */
-  width: 178px;
-  float: right;
-  padding-left: 20px;
-  font-size: 12px;
-  font-weight: 800;
+  flex: 1;
 }
 .product-descraption {
   clear: both;
 }
 img {
-  float: left;
+  /* float: left;
   width: 150px;
-  height: 202px;
+  height: 202px; */
 }
-ul li {
-  line-height: 1.8;
+
+.price-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-product {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
