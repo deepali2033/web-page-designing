@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 .box {
-  background-color: #bcbcbc;
+  /* background-color: #bcbcbc; */
   font-family: sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -48,4 +48,49 @@ h1 {
 }
 #box3 {
   background-color: blue;
+}
+.section-1 {
+  display: flex;
+  align-items: center;
+  margin: 0 25px;
+  font-family: sans-serif;
+  text-align: left;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+.section1-div h1 {
+  margin-bottom: 24px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  text-align: left;
+}
+.section1-div p {
+  padding: 40px 0;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+a {
+  background-color: rgb(54, 142, 54);
+  border: 2px solid rgb(54, 142, 54);
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 200px;
+}
+img {
+  width: 500px;
+}
+.section-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.section2 div1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: brown;
+  font-size: 16px;
 }
