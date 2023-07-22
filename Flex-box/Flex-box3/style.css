@@ -55,20 +55,25 @@ h1 {
   margin: 0 25px;
   font-family: sans-serif;
   text-align: left;
-  margin-top: 50px;
-  margin-right: 50px;
+  margin: 40px 30px;
 }
-.section1-div h1 {
+.section1-div1 h1 {
   margin-bottom: 24px;
   font-size: 44px;
   line-height: 1.1;
   letter-spacing: -1px;
   text-align: left;
 }
-.section1-div p {
+.section1-div1 p {
   padding: 40px 0;
   line-height: 1.5;
   letter-spacing: 1px;
+}
+.section1-div1 {
+  margin: 41px 70px;
+}
+.section1-div2 {
+  margin: 20px 20px;
 }
 
 a {
@@ -76,8 +81,7 @@ a {
   border: 2px solid rgb(54, 142, 54);
   color: white;
   border-radius: 20px;
-  padding: 10px;
-  margin-left: 200px;
+  padding: 15px;
 }
 img {
   width: 500px;
@@ -85,12 +89,30 @@ img {
 .section-2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 50px;
-  margin-left: 30px;
+  margin: 40px 30px;
+  column-gap: 20px;
+  row-gap: 40px;
+  font-family: sans-serif;
 }
-.section2 div1 {
+
+.div-hadding {
   grid-column-start: 1;
   grid-column-end: 4;
-  background-color: brown;
-  font-size: 16px;
+  background-color: rgb(54, 142, 54);
+  font-size: 27px;
+  column-gap: 20px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.section2 h5 {
+  font-size: 20px;
+  letter-spacing: 1.5;
+}
+.section2 p {
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.section2p {
+  margin: 20px;
 }
