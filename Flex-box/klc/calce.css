@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.calce-container {
+  background-color: black;
+  color: white;
+  margin: 0 37%;
+  border-radius: 20px;
+}
+.calce {
+  padding: 5px 10px;
+}
+.first-row {
+  background-color: brown;
+  height: 50px;
+  margin-top: 20px;
+  font-size: 45px;
+  text-align: end;
+}
+.second-row {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.scnd-row-frst-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.scnd-row-scnd-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.scnd-row-third-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.scnd-row-forth-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+/* .btn {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+} */
+.third-row {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.third-row-frst-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.third-row-scnd-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.third-row-third-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.third-row-forth-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.forth-row {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.forth-row-frst-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.forth-row-scnd-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.forth-row-third-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.forth-row-forth-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.fifth-row {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.fifth-row-frst-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.fifth-row-scnd-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.fifth-row-third-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.fifth-row-forth-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.six-row {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.six-row-frst-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 150px;
+  text-align: center;
+}
+.six-row-scnd-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+.six-row-third-child {
+  border: 2px solid black;
+  border-radius: 60px;
+  font-size: 42px;
+  background-color: aliceblue;
+  flex-basis: 50px;
+  text-align: center;
+}
+btn:hover {
+  background-color: rgb(163, 161, 164);
+}
