@@ -29,13 +29,27 @@ h2 {
 p {
   font-family: 500;
 }
+.circle {
+  background-color: #f7f3f3;
+  border: 2px solid black;
+}
 .btn {
   float: right;
   /* text-align: center; */
   margin-right: 20px;
   border-radius: 16px;
   background-color: pink;
-  padding: 5px 11px;
+  padding: 5px 20px;
   font-size: 17px;
   border: 2px solid pink;
+  position: relative;
+  right: 46px;
+  bottom: 32px;
+}
+input {
+  padding: 7px;
+  margin-left: 40px;
+  width: 65%;
+  border-radius: 14px;
+  border: 2px solid #f7f3f3;
 }
