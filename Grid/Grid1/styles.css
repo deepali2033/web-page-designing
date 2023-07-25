@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.cantainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid black;
+  width: 60%;
+}
