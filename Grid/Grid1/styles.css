@@ -5,16 +5,19 @@ body {
 .cantainer {
   display: grid;
   grid-template-columns: 61% auto;
-  border: 2px solid black;
+
   /* width: 40%; */
   height: 60%;
   font-family: sans-serif;
   margin: 25%;
+  background-color: rgb(248, 241, 242);
+  box-shadow: 7px 1px 33px black;
 }
 h1 {
 }
 img {
-  height: 55%;
+  width: 100%;
+  height: auto;
 }
 .header {
   padding-left: 7%;
@@ -43,11 +46,10 @@ p {
   font-size: 17px;
   border: 2px solid pink;
   position: relative;
-  right: 46px;
-  bottom: 32px;
+  right: 16%;
 }
 input {
-  padding: 7px;
+  padding: 8px;
   margin-left: 40px;
   width: 65%;
   border-radius: 14px;
