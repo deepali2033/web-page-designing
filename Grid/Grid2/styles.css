@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.cantainer {
+  display: grid;
+  grid-template-columns: 21% 1fr 30%;
+  grid-template-rows: 9% 1fr 50px;
+  margin: 2%;
+}
+.nav {
+  background-color: rgb(134, 26, 234);
+  background-image: linear-gradient(
+    to right,
+    rgb(134, 26, 234),
+    rgb(195, 144, 243)
+  );
+
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  padding-left: 2px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+.items {
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+a {
+  color: aliceblue;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+.first {
+  background-color: blue;
+  grid-column-start: 1;
+}
+.second {
+  background-color: rgb(219, 130, 35);
+}
+.third {
+  background-color: aquamarine;
+}
+.footer {
+  background-color: pink;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.box1 {
+  background-color: red;
+  width: 42%;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.box2 {
+  background-color: rgb(242, 255, 0);
+  width: 42%;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.box3 {
+  background-color: rgb(45, 167, 232);
+  width: 42%;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.box4 {
+  background-color: rgb(207, 34, 161);
+  width: 42%;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.box5 {
+  background-color: rgb(39, 7, 7);
+  width: 42%;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.box6 {
+  background-color: rgb(36, 237, 56);
+  width: 42%;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.first {
+  background-color: aquamarine;
+}
