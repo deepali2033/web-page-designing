@@ -5,10 +5,12 @@ body {
 .cantainer {
   display: grid;
   grid-template-columns: 18% 1fr 21%;
-  grid-template-rows: 9% 1fr 50px;
+  grid-template-rows: 70px 1fr 110px;
   margin: 2%;
-  column-gap: 2%;
-  row-gap: 3%;
+  column-gap: 6%;
+  row-gap: 2%;
+
+  height: auto;
 }
 .nav {
   background-color: rgb(134, 26, 234);
@@ -53,14 +55,14 @@ button {
 }
 
 .first {
-  background-color: blue;
+  background-color: rgb(168, 168, 169);
   grid-column-start: 1;
 }
 .second {
-  background-color: rgb(219, 130, 35);
+  background-color: rgb(253, 252, 250);
 }
 .third {
-  background-color: aquamarine;
+  background-color: rgb(181, 185, 184);
 }
 .footer {
   background-color: pink;
@@ -73,7 +75,7 @@ button {
     rgb(195, 144, 243)
   );
   text-align: center;
-  padding: 10px;
+
   font-size: 20px;
   margin: 2%;
 }
@@ -107,21 +109,21 @@ button {
 }
 .box5 {
   background-color: rgb(39, 7, 7);
-  width: 42%;
-  height: 100px;
   margin-top: 20px;
   margin-left: 30px;
+  width: 42%;
+  height: 100px;
 }
 .box6 {
-  background-color: rgb(36, 237, 56);
-  width: 42%;
-  height: 100px;
+  background-color: rgb(39, 7, 7);
   margin-top: 20px;
   margin-left: 30px;
+  width: 42%;
+  height: 100px;
 }
 
 .first {
-  background-color: aquamarine;
+  background-color: rgb(215, 226, 223);
 }
 .upper {
   display: flex;
@@ -138,10 +140,13 @@ button {
 .img2 {
   width: 20%;
 }
-.main-container {
+.container-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 9% 20% 1fr;
+  column-gap: 20px;
+  row-gap: 3%;
+  font-family: sans-serif;
 }
 .content-1 {
   grid-column-start: 1;
@@ -150,4 +155,33 @@ button {
 .img5 {
   grid-column-start: 1;
   grid-column-end: 3;
+}
+.content-1 p {
+  color: white;
+  background-color: rgb(134, 26, 234);
+  background-image: linear-gradient(
+    to right,
+    rgb(134, 26, 234),
+    rgb(195, 144, 243)
+  );
+  padding: 5px 30px;
+  line-height: 2;
+  text-align: center;
+  padding: 5%;
+  border-radius: 10px;
+}
+.line {
+  color: white;
+  background-color: rgb(134, 26, 234);
+  background-image: linear-gradient(
+    to right,
+    rgb(134, 26, 234),
+    rgb(195, 144, 243)
+  );
+  border-radius: 10px;
+}
+.line ul li {
+  list-style: none;
+  line-height: 1.5;
+  padding-top: 10px;
 }
