@@ -4,11 +4,11 @@ body {
 }
 .cantainer {
   display: grid;
-  grid-template-columns: 18% 1fr 21%;
-  grid-template-rows: 70px 1fr 110px;
-  margin: 2%;
-  column-gap: 6%;
-  row-gap: 2%;
+  grid-template-columns: 200px 1fr 220px;
+  grid-template-rows: 73px 1fr 110px;
+
+  column-gap: 20px;
+  row-gap: 20px;
 
   height: auto;
 }
@@ -36,7 +36,7 @@ body {
   color: white;
   display: flex;
   flex-direction: row;
-  margin: 19px;
+  margin: 17px;
 }
 button {
   color: rgb(216, 227, 237);
@@ -44,25 +44,26 @@ button {
   /* padding: 9px 20px; */
   background-color: rgb(145 96 191);
   border: 2px;
+  border-radius: 10px;
   margin: 0px 20px;
   font-size: 11px;
   /* text-align: center; */
-  padding-bottom: 25px;
-  padding-top: 15px;
-  padding-right: 25px;
-  padding-left: 25px;
-  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 5px 22px;
 }
 
 .first {
-  background-color: rgb(168, 168, 169);
+  /* background-color: white; */
   grid-column-start: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.second {
-  background-color: rgb(253, 252, 250);
-}
+
 .third {
   background-color: rgb(181, 185, 184);
+  background-color: rgb(241 243 243);
+  box-shadow: 6px 6px 26px -20px;
 }
 .footer {
   background-color: pink;
@@ -78,64 +79,23 @@ button {
 
   font-size: 20px;
   margin: 2%;
+  box-shadow: 6px 6px 26px -10px;
 }
-.box1 {
-  background-color: red;
-  width: 42%;
-  height: 100px;
-  margin-top: 20px;
-  margin-left: 30px;
-}
-.box2 {
-  background-color: rgb(242, 255, 0);
-  width: 42%;
-  height: 100px;
-  margin-top: 20px;
-  margin-left: 30px;
-}
-.box3 {
-  background-color: rgb(45, 167, 232);
-  width: 42%;
-  height: 100px;
-  margin-top: 20px;
-  margin-left: 30px;
-}
-.box4 {
-  background-color: rgb(207, 34, 161);
-  width: 42%;
-  height: 100px;
-  margin-top: 20px;
-  margin-left: 30px;
-}
-.box5 {
-  background-color: rgb(39, 7, 7);
-  margin-top: 20px;
-  margin-left: 30px;
-  width: 42%;
-  height: 100px;
-}
-.box6 {
-  background-color: rgb(39, 7, 7);
-  margin-top: 20px;
-  margin-left: 30px;
-  width: 42%;
-  height: 100px;
+.img-rapper {
+  width: 50%;
+  margin: 10px;
+  box-shadow: 6px 6px 26px -9px;
+  border-radius: 10px;
 }
 
-.first {
-  background-color: rgb(215, 226, 223);
-}
-.upper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 .third {
   display: flex;
   flex-direction: column;
 }
 .second {
   padding: 0 20px;
+  background-color: rgb(241 243 243);
+  box-shadow: 6px 6px 26px -20px;
 }
 .img2 {
   width: 100%;
@@ -196,4 +156,91 @@ button {
 .img-setting {
   width: 100%;
   height: auto;
+}
+.lobo h1 {
+  margin-bottom: 0;
+  color: rgb(179, 104, 305);
+  font-size: 38px;
+}
+.lobo i {
+  color: rgb(179, 104, 305);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.first-div-first-child {
+  background: rgb(179, 104, 305);
+  padding: 17px 28px;
+  margin-top: 20px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  font-size: 24px;
+}
+.first-div-second-child {
+  background: #f8f5f5;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 1px 2px 7px -3px;
+}
+.second-div-first-child {
+  background: rgb(179, 104, 305);
+  padding: 17px 28px;
+  margin-top: 20px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  font-size: 24px;
+}
+.second-div-second-child {
+  background: #fefdfd;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 1px 2px 7px -3px;
+}
+.upper {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+}
+.main-div {
+  display: flex;
+  gap: 20%;
+}
+.img3 .p1 {
+  font-size: 11px;
+  color: rgb(179, 104, 305);
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.upper p {
+  line-height: 1.5;
+  color: #7c7878;
+}
+.second p {
+  line-height: 1.5;
+  color: #747474;
+  letter-spacing: 1px;
+}
+.img3 .p2 {
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+.content-1 p {
+  line-height: 1.5;
+  color: #f0efef;
+  letter-spacing: 1px;
+}
+.first-column-img-rapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.third-column-img-rapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cats-img {
+  width: 80%;
+  margin: 10px;
+  box-shadow: 6px 6px 26px -9px;
+  border-radius: 10px;
 }
