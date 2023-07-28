@@ -7,6 +7,7 @@ body {
   border: 2px solid black;
   color: aliceblue;
   background-color: rgb(32, 33, 46);
+  background-image: linear-gradient(44deg, black, #4c4a50);
   border-radius: 20px;
   width: 22%;
   box-shadow: 1px 1px 11px 1px black;
@@ -24,6 +25,9 @@ button {
   border-radius: 25px;
   color: #fdf5f5;
 }
+button:hover {
+  background-color: #b8811b;
+}
 
 .wrapper-div {
   display: flex;
@@ -35,6 +39,8 @@ button {
   height: 37px;
   background: #5a5555;
   margin-bottom: 35px;
+  font-size: 22px;
+  text-align: center;
 }
 p {
   font-size: 17px;
