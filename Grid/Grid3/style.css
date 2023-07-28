@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.main-div {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+  background: #e6edf1;
+  box-shadow: 1px 1px 11px 1px;
+}
+
+.right-div {
+  margin: 25px;
+  font-family: sans-serif;
+}
+.right-div p {
+  font-size: 12px;
+  color: #646060;
+}
+button {
+  border-radius: 4px;
+  background: #30afe9;
+  color: #f7f0f0;
+  padding: 10px 15px;
+  border: #e6edf1;
+  box-shadow: 1px 1px 8px -3px black;
+}
+ul li:before {
+  content: "✓";
+  color: #30afe9;
+  padding-right: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+ul {
+  line-height: 1.9;
+  font-size: 12px;
+  margin: 20px 0;
+  list-style: none;
+  padding-left: 0;
+}
+strong {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+.dot-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.dot-item {
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 8px;
+  height: 8px;
+}
+.main-div-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.dot-1 {
+  background-color: rgb(61, 8, 8);
+}
+.dot-same {
+  background-color: white;
+}
+.upper-div {
+  display: flex;
+  flex-direction: row;
+}
