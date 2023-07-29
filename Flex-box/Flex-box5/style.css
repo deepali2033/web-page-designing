@@ -5,8 +5,8 @@ body {
 .main-div {
   display: flex;
   flex-direction: column;
-
-  width: 50%;
+  margin: 20px 10px;
+  padding: 20px 0;
   background: #e6edf1;
   box-shadow: 1px 1px 11px 1px;
 }
