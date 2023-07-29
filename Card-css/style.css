@@ -34,10 +34,11 @@ button:hover {
 }
 .star {
   border-radius: 50%;
-  width: 27px;
-  padding: 5px;
+  width: 23px;
+  height: 23px;
+  padding: 10px;
   background: #5a5555;
-  margin-bottom: 35px;
+
   font-size: 22px;
   text-align: center;
 }
@@ -58,4 +59,8 @@ p {
   background: #5a5555;
   color: #dcd9d9;
   text-align: center;
+}
+.star-icon {
+  stroke: #e19b1a;
+  fill: #e19b1a;
 }
