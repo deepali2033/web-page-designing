@@ -8,7 +8,7 @@ Open [https://deepali2033.github.io/web-page-designing/chat-box/chatbox.html] (C
 Runs the web page using URL .<br />
 Open [https://deepali2033.github.io/web-page-designing/Card-css/index.html] (Chat-box URL) to view it in the browser.
 
-# Card-css
+# Buy-chairs
 
 Runs the web page using URL .<br />
 Open [https://deepali2033.github.io/web-page-designing/Buy-chairs/index.html] (Chat-box URL) to view it in the browser.
