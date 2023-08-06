@@ -3,9 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:ital@1&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Ominifood</title>
   </head>
   <body>
+    <header class="header">
+      <img class="logo" src="logo.png" alt="logo" />
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-link"><a href="#">section 1</a></li>
+          <li class="main-nav-link"><a href="#">section 2</a></li>
+          <li class="main-nav-link"><a href="#">section 3</a></li>
+          <li class="main-nav-link"><a href="#">section 4</a></li>
+        </ul>
+      </nav>
+    </header>
     <section class="hero-section">
       <div class="hero">
         <div class="hero-text-box">
@@ -17,11 +35,27 @@
             healthy again.Tailored to your personal tastes and nutritional
             needs. we have delivered 250,000+ meals last year!
           </p>
-          <a href="#" class="btn">Start easting well</a>
-          <a href="#" class="btn">Learn more &darr; </a>
+          <a href="#" class="btn btn--full margin-right-sm"
+            >Start easting well</a
+          >
+          <a href="#" class="btn btn--outline">Learn more &darr; </a>
+          <div class="delivered-meals">
+            <div class="delivered-imgs">
+              <img src="1.jpg" />
+              <img src="46.jpg" />
+              <img src="86.jpg" />
+              <img src="97.jpg" />
+              <img src="97.jpg" />
+              <img src="1.jpg" />
+              <img src="46.jpg" />
+            </div>
+            <p class="delivered-text">
+              <span> 250,000+</span> meals delivered last year
+            </p>
+          </div>
         </div>
         <div class="hero-img-box">
-          <img src="" />
+          <img src="food.png" class="hero-img" alt="different kind of dishes" />
         </div>
       </div>
     </section>
