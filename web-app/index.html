@@ -18,10 +18,11 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
     <title>Ominifood</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header nav-open">
       <img class="logo" src="img/omnifood-logo.png" alt="logo" />
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -31,6 +32,10 @@
           <li><a class="main-nav-link nav-cta" href="#">section 4</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <section class="hero-section">
       <div class="hero">
@@ -179,7 +184,7 @@
               <span class="tag tag--vegan"> vegan</span>
               <span class="tag tag--paled"> paled</span>
             </div>
-            <p class="meals-title">Japanese Gyozas</p>
+            <p class="meals-title">Avocado Salad</p>
             <ul class="meal-attributes">
               <li class="meal-attribute">
                 <ion-icon class="meal-icon" name="flame-outline"></ion-icon
