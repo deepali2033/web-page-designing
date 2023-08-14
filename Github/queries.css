@@ -94,7 +94,7 @@
     padding: 2.2rem;
   }
 }
-@media (max-width: 37) {
+@media (max-width: 37em) {
   .form-box {
     width: 60%;
   }
