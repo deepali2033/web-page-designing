@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3.2rem 9.8rem;
+  padding: 2.7rem 6.8rem;
   font-size: 2rem;
 }
 span {
@@ -141,7 +141,7 @@ h1 {
   padding: 6rem;
 }
 .site {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .work-heading {
   font-size: 4.4rem;
@@ -160,4 +160,7 @@ h1 {
   font-weight: 600;
   font-size: 1.9rem;
   border: 1px solid gray;
+}
+.nav-head .main-nav .header-right {
+  background-color: aliceblue;
 }
