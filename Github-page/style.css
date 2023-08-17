@@ -18,9 +18,17 @@ body {
   padding: 2.7rem 6.8rem;
   font-size: 2rem;
 }
+.main-nav,
+.header-right {
+  /* background-color: aliceblue; */
+  color: #f1e6e6;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 0.5rem;
+  align-items: center;
+}
 span {
   color: #807f7f;
-  font-size: 2.2rem;
 }
 .icon {
   width: 4rem;
@@ -78,7 +86,18 @@ span {
   flex-direction: column;
   gap: 1.3rem;
 }
-.nav-btn {
+.btn-mobile-nav {
+  border: none;
+  background-color: black;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: white;
+}
+.icon-mobile-nav[name="close-outline"] {
   display: none;
 }
 label {
