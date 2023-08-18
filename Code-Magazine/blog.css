@@ -1,0 +1,82 @@
+a:hover {
+  text-decoration: none;
+}
+.header {
+  background-color: #f76707;
+  color: white;
+}
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#menu li {
+  display: inline-block;
+}
+#menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 10px;
+}
+#menu li a:hover {
+  background-color: #c0392b;
+}
+#banner {
+  background: url(plant.jpg) no-repeat 0 0;
+  background-size: cover;
+  color: #fff;
+  padding-top: 5rem;
+}
+.logo-img {
+  width: auto;
+  height: 40px;
+  color: #fff;
+}
+.banner-title {
+  background-color: rgba(255, 255, 255, 0.9ss);
+}
+.title {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+  display: inline-block;
+}
+.lead {
+  background-color: rgb(247, 103, 7, 0.7);
+  padding: 0.5rem;
+}
+.outline {
+  width: 3rem;
+  height: 3rem;
+  color: #f76707;
+}
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.section-head {
+  text-align: center;
+  padding-bottom: 4rem;
+  text-transform: capitalize;
+}
+h2.section-head:a {
+  background: #fff;
+  content: "";
+  width: 100px;
+  height: 3px;
+  color: #f76707;
+}
+.customer-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.testimonial {
+  background: url(img.frm.jpg) no-repeat 0 0;
+  background-size: cover;
+  color: #89cff0;
+}
+.name {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}

@@ -4,11 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bootstrap web site</title>
-    <link rel="stylesheet" href="./../bootstrap-5.3.1-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./../bootstrap-files/css/bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-fluid">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1 id="logo">Company name</h1>
+          </div>
+          <div class="col-md-8">
+            <ul id="menu" class=".float-md-end">
+              <li><a href=""> Why slack</a></li>
+              <li><a href=""> Pricing</a></li>
+              <li><a href="">About us</a></li>
+              <li><a href="">Learning</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <img class="img" src="img.jpg" alt="slack application in system" />
+          </div>
+          <div class="col-md-7">
+            <h1>Where Work Happens</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+              corrupti harum fuga cupiditate iure, ducimus, soluta fugiat nisi
+              id ipsa vero! Sit quam deserunt dicta eaque, atque rerum odit!
+            </p>
+            <button>get started</button>
+            <p>Lorem, ipsum. <a>sign in &rAarr; </a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container-fluid">
       <header class="row flex-wrapch" id="header">logo</header>
       <section class="row justify-content-between" id="contant">
         <div class="col-4">
@@ -45,12 +82,8 @@
             <div class="col-md-2">logo</div>
             <div class="col-md-2">logo</div>
 
-            <!-- <div class="col-md-4">logo</div>
+             <div class="col-md-4">logo</div>
             <div class="col-md-4">logo</div>
             <div class="col-md-4">logo</div> -->
-          </div>
-        </div>
-      </section>
-    </div>
   </body>
 </html>
