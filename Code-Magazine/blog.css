@@ -79,4 +79,5 @@ h2.section-head:a {
 .name {
   margin-bottom: 0;
   margin-top: 1rem;
+  text-transform: capitalize;
 }
