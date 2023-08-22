@@ -439,5 +439,198 @@
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <h3 class="py-3 text-center">
+        Bootstrap Collapse & Accordion Plugin Classes
+      </h3>
+      <div class="row py-3 justify-content-center">
+        <div class="col-md-7">
+          <button
+            class="btn btn-success mb-2"
+            data-toggle="collapse"
+            data-target="#myCollapse"
+          >
+            Click
+          </button>
+          <a
+            class="btn btn-success mb-2"
+            data-toggle="collapse"
+            data-target=".multi-collapse"
+          >
+            Anchor click</a
+          >
+
+          <div class="collapse" id="myCollapse">
+            <div class="card card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit
+              accusamus assumenda porro at! Nemo nisi est soluta beatae dicta!
+            </div>
+          </div>
+          <div class="collapse multi-collapse mb-2" id="">
+            <div class="card card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit
+              accusamus assumenda porro at! Nemo nisi est soluta beatae dicta!
+            </div>
+          </div>
+          <div class="collapse multi-collapse" id="">
+            <div class="card card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit
+              accusamus assumenda porro at! Nemo nisi est soluta beatae dicta!
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="cord-header">
+              <button
+                class="btn btn-link btn-block text-left"
+                data-toggle="collapse"
+                data-target="#myCollapseOne"
+                aria-expanded="true"
+              >
+                Heading Number One
+              </button>
+            </div>
+            <div
+              id="myCollapseOne"
+              class="collapse show"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                illo quae quis dicta, eveniet similique hic provident fugiat aut
+                cupiditate.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cord-header">
+              <button
+                class="btn btn-link btn-block text-left collapsed"
+                data-toggle="collapse"
+                data-target="#myCollapseTwo"
+                aria-expanded="true"
+              >
+                Heading Number One
+              </button>
+            </div>
+            <div
+              id="myCollapseTwo"
+              class="collapse collapsed"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                illo quae quis dicta, eveniet similique hic provident fugiat aut
+                cupiditate.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cord-header">
+              <button
+                class="btn btn-link btn-block text-left"
+                data-toggle="collapse"
+                data-target="#myCollapseThree"
+                aria-expanded="true"
+              >
+                Heading Number One
+              </button>
+            </div>
+            <div
+              id="myCollapseThree"
+              class="collapse collapsed"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                illo quae quis dicta, eveniet similique hic provident fugiat aut
+                cupiditate.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3 class="py-3 text-center">Bootstrap Tub Plugin Classes</h3>
+
+      <div class="row py-3">
+        <div class="col-md-6">
+          <ul class="nav nav-pills" id="pills-tab">
+            <li class="nav-item">
+              <a class="nav-link active" data-target="#home" data-toggle="pill"
+                >Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="#profile" data-toggle="pill"
+                >Profile
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="#contact" data-toggle="pill"
+                >Contact
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content py-3" id="myPillsContent">
+            <div class="tab-pane" id="home">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+              maiores.
+            </div>
+            <div class="tab-pane" id="profile">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt,Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Delectus, esse autem. Optio laborum rem provident voluptatibus
+              quas dolorem aperiam sapiente. maiores.
+            </div>
+            <div class="tab-pane" id="contact">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+              maiores.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul class="nav nav-tabs" id="tab">
+            <li class="nav-item">
+              <a class="nav-link active" data-target="#home1" data-toggle="tab"
+                >Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="#profile1" data-toggle="tab"
+                >Profile
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="#contact1" data-toggle="tab"
+                >Contact
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content py-3" id="myTabContent">
+            <div class="tab-pane" id="home1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+              maiores.
+            </div>
+            <div class="tab-pane" id="profile1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt,Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Delectus, esse autem. Optio laborum rem provident voluptatibus
+              quas dolorem aperiam sapiente. maiores.
+            </div>
+            <div class="tab-pane" id="contact1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+              maiores.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
