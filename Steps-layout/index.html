@@ -14,12 +14,10 @@
     <title>Steps Layout Design</title>
     <style>
       .container {
-        width: 80%;
-        height: 2000px;
-        margin: 20px auto;
-        border: 2px solid black;
+        justify-content: center;
+        align-items: center;
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
       }
       .step-div {
         display: flex;
@@ -27,14 +25,21 @@
         width: 180px;
         margin: 20px 40px;
       }
+      .outline-icon {
+        width: 50px;
+        height: 50px;
+
+        color: white;
+      }
       .hexagon-div {
         position: relative;
         filter: drop-shadow(1px 2px 5px rgb(0, 0, 0));
       }
       .hexagon {
         position: absolute;
-        width: 180px;
+        width: 100%;
         height: 250px;
+        top: 30px;
         margin: 0;
         background-color: rgb(255, 255, 255);
         clip-path: polygon(50% 5%, 100% 20%, 100% 75%, 51% 89%, 0 75%, 0 20%);
@@ -44,23 +49,26 @@
       }
       .step-icon {
         background-color: #ff922b;
-        height: 300px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 5rem;
       }
       /* .step-icon:before {
-        content: "";
-        position: relative;
-        width: 200px;
-        height: 250px;
-        margin: 0;
-        background-color: rgb(17, 217, 60);
-        clip-path: polygon(0 25%, 50% 1%0, 100% 25%, 100% 75%, 50% 90%, 0 75%);
-      } */
+                  content: "";
+                  position: relative;
+                  width: 200px;
+                  height: 250px;
+                  margin: 0;
+                  background-color: rgb(17, 217, 60);
+                  clip-path: polygon(0 25%, 50% 1%0, 100% 25%, 100% 75%, 50% 90%, 0 75%);
+                } */
       .step-text-box {
         position: absolute;
-        top: -60px;
+        top: -200px;
         background-color: rgb(255, 255, 255);
-        clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
         padding: 50px 10px 20px;
         text-align: center;
       }
@@ -74,6 +82,7 @@
         align-self: center;
         justify-self: center;
         font-size: 12px;
+        font-family: sans-serif;
       }
       .main-div {
         display: flex;
@@ -95,10 +104,10 @@
       .bulp {
         background-color: #38d9a9;
       }
-      .cup {
+      .trophy {
         background-color: #fcc419;
       }
-      .pencil {
+      .snow {
         background-color: #51cf66;
       }
     </style>
@@ -140,7 +149,7 @@
           </div>
         </div>
         <div class="step-icon bulp">
-          <ion-icon class="outline-icon" name="settings-outline"></ion-icon>
+          <ion-icon class="outline-icon" name="bulb-outline"></ion-icon>
         </div>
         <div class="div">
           <div class="step-text-box">
@@ -163,8 +172,8 @@
             </div>
           </div>
         </div>
-        <div class="step-icon cup">
-          <ion-icon class="outline-icon" name="settings-outline"></ion-icon>
+        <div class="step-icon trophy">
+          <ion-icon class="outline-icon" name="trophy-outline"></ion-icon>
         </div>
         <div class="div">
           <div class="step-text-box">
@@ -187,8 +196,8 @@
             </div>
           </div>
         </div>
-        <div class="step-icon pencil">
-          <ion-icon class="outline-icon" name="settings-outline"></ion-icon>
+        <div class="step-icon snow">
+          <ion-icon class="outline-icon" name="snow-outline"></ion-icon>
         </div>
         <div class="div">
           <div class="step-text-box">
