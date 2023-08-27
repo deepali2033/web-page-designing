@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <title>Steps Layout Design</title>
     <style>
       .container {
@@ -10,30 +18,32 @@
         height: 2000px;
         margin: 20px auto;
         border: 2px solid black;
+        display: flex;
+        flex-direction: row;
       }
       .step-div {
         display: flex;
         flex-direction: column;
-        width: 200px;
+        width: 180px;
         margin: 20px 40px;
       }
       .hexagon-div {
         position: relative;
+        filter: drop-shadow(1px 2px 5px rgb(0, 0, 0));
       }
       .hexagon {
         position: absolute;
-        width: 200px;
+        width: 180px;
         height: 250px;
         margin: 0;
-        background-color: rgb(200, 200, 200);
+        background-color: rgb(255, 255, 255);
         clip-path: polygon(50% 5%, 100% 20%, 100% 75%, 51% 89%, 0 75%, 0 20%);
-        box-shadow: 0px 0px 19px black;
         display: flex;
         align-items: center;
         justify-content: center;
       }
       .step-icon {
-        background-color: yellow;
+        background-color: #ff922b;
         height: 300px;
         margin-top: 5rem;
       }
@@ -49,18 +59,47 @@
       .step-text-box {
         position: absolute;
         top: -60px;
-        background-color: rgb(0, 255, 21);
+        background-color: rgb(255, 255, 255);
         clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
-        box-shadow: 0px 0px 19px black;
+        padding: 50px 10px 20px;
+        text-align: center;
       }
       .div {
         position: relative;
+        filter: drop-shadow(1px 2px 5px rgb(0, 0, 0));
       }
       p {
         color: rgb(95, 93, 93);
         display: block;
         align-self: center;
         justify-self: center;
+        font-size: 12px;
+      }
+      .main-div {
+        display: flex;
+        flex-direction: column;
+      }
+      .main-div p {
+        font-size: 1.6rem;
+        font-stretch: expanded;
+        margin: 0;
+      }
+      h1 {
+        font-size: 3rem;
+        align-self: center;
+        margin: 0;
+      }
+      .setting {
+        background-color: #ff922b;
+      }
+      .bulp {
+        background-color: #38d9a9;
+      }
+      .cup {
+        background-color: #fcc419;
+      }
+      .pencil {
+        background-color: #51cf66;
       }
     </style>
   </head>
@@ -69,14 +108,88 @@
       <div class="step-div">
         <div class="hexagon-div">
           <div class="hexagon">
-            <div>
+            <div class="main-div">
               <p>STEP</p>
 
               <h1>02</h1>
             </div>
           </div>
         </div>
-        <div class="step-icon">icons</div>
+        <div class="step-icon setting">
+          <ion-icon class="outline-icon" name="settings-outline"></ion-icon>
+        </div>
+        <div class="div">
+          <div class="step-text-box">
+            <p class="step-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+              delectus voluptatibus alias quam porro, vel incidunt ratione,
+              velit, quidem perferendis autem et placeat blanditiis nostrum
+              expedita! Dolorum eveniet mollitia eos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="step-div">
+        <div class="hexagon-div">
+          <div class="hexagon">
+            <div class="main-div">
+              <p>STEP</p>
+
+              <h1>02</h1>
+            </div>
+          </div>
+        </div>
+        <div class="step-icon bulp">
+          <ion-icon class="outline-icon" name="settings-outline"></ion-icon>
+        </div>
+        <div class="div">
+          <div class="step-text-box">
+            <p class="step-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+              delectus voluptatibus alias quam porro, vel incidunt ratione,
+              velit, quidem perferendis autem et placeat blanditiis nostrum
+              expedita! Dolorum eveniet mollitia eos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="step-div">
+        <div class="hexagon-div">
+          <div class="hexagon">
+            <div class="main-div">
+              <p>STEP</p>
+
+              <h1>02</h1>
+            </div>
+          </div>
+        </div>
+        <div class="step-icon cup">
+          <ion-icon class="outline-icon" name="settings-outline"></ion-icon>
+        </div>
+        <div class="div">
+          <div class="step-text-box">
+            <p class="step-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+              delectus voluptatibus alias quam porro, vel incidunt ratione,
+              velit, quidem perferendis autem et placeat blanditiis nostrum
+              expedita! Dolorum eveniet mollitia eos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="step-div">
+        <div class="hexagon-div">
+          <div class="hexagon">
+            <div class="main-div">
+              <p>STEP</p>
+
+              <h1>02</h1>
+            </div>
+          </div>
+        </div>
+        <div class="step-icon pencil">
+          <ion-icon class="outline-icon" name="settings-outline"></ion-icon>
+        </div>
         <div class="div">
           <div class="step-text-box">
             <p class="step-text">
