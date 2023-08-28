@@ -64,7 +64,6 @@ p {
   margin: 5% 3% 5% 0;
 }
 
-/* title image */
 .title-image {
   width: 80%;
   position: absolute;
@@ -73,91 +72,9 @@ p {
   border: 15px solid;
 }
 
-/* feature section */
-
-#features {
-  padding: 7% 15%;
-  background-color: white;
-  position: relative;
-  z-index: 1;
-}
-
-.feature-box {
-  text-align: center;
-  padding: 5%;
-}
-
-.icon {
-  color: #ef8172;
-  margin-bottom: 1rem;
-}
-
-.icon:hover {
-  color: #ff4c68;
-}
-
-#testimonials {
-  text-align: center;
-  background-color: #ef8172;
-  color: white;
-}
-
-.carousel-item {
-  padding: 7% 15%;
-}
-
-.testimonials-img {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
-}
-
-#press {
-  background-color: #ef8172;
-  text-align: center;
-  padding-bottom: 3%;
-}
-.press-logo {
-  width: 15%;
-  margin: 20px 20px 50px;
-}
-
-#pricing {
-  padding: 100px;
-  text-align: center;
-}
-
-.pricing-column {
-  padding: 3% 2%;
-}
-
-.cta {
-  background-color: #ff4c68;
-  color: white;
-  padding: 7% 15%;
-  text-align: center;
-}
-
-.cta-heading {
-  font-family: "Montserrat-Black";
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
-
-#footer {
-  padding: 7% 15%;
-  text-align: center;
-}
-
-.social-icon {
-  margin: 20px 10px;
-}
-
+/* media  */
 @media (max-width: 1028px) {
   #title {
     text-align: center;
-  }
-  .title-image {
-    position: static;
   }
 }
