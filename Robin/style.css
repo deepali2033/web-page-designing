@@ -66,12 +66,45 @@ p {
 
 .title-image {
   width: 80%;
-  position: absolute;
-  right: 0%;
+
   border-radius: 10px;
   border: 15px solid;
 }
 
+/* Features */
+
+#features {
+  padding: 7% 15%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+.feature-box {
+  text-align: center;
+  padding: 9%;
+}
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+.icon:hover {
+  color: #ff4c68;
+}
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: white;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.Testimonials-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
 /* media  */
 @media (max-width: 1028px) {
   #title {
