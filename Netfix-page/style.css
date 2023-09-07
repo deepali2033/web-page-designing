@@ -1,0 +1,9 @@
+.netflix-logo {
+  width: 9rem;
+}
+#main-section {
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
