@@ -58,8 +58,8 @@
               English
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">English</a></li>
-              <li><a class="dropdown-item" href="#">Hindi</a></li>
+              <li><a class="dropdown-item" href="#"> English </a></li>
+              <li><a class="dropdown-item" href="#"> Hindi </a></li>
             </ul>
             <button class="btn btn-sm btn-primary">Sign Up</button>
           </div>
@@ -68,20 +68,24 @@
           <div id="title" class="col-12 text-center">
             <h1>The biggest Indian hits. Ready to watch here from ₹ 149.</h1>
             <p>Join today. Cancel anytime.</p>
-            <p>
-              Ready to watch? Enter your email to create or restart your
-              membership.
-            </p>
-            <div class="row">
-              <div class="col-md-6">
-                <input type="email" placeholder="Email Address" />
+            <form action="">
+              <h3>
+                Ready to watch? Enter your email to create or restart your
+                membership.
+              </h3>
+              <div class="form-group mx-sm-3 mb-2">
+                <label for="inputEmail" class="sr-only"> Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="Email Address"
+                />
               </div>
-              <div class="col-md-6">
-                <button type="button" class="btn btn-secondary btn-lg">
-                  Get Started
-                </button>
-              </div>
-            </div>
+              <button type="submit" class="btn btn-primary mb-2">
+                Get started
+              </button>
+            </form>
           </div>
         </div>
       </div>
