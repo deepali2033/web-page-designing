@@ -50,10 +50,12 @@ h4 {
   font-size: 0.8rem;
 }
 .card-para {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .card {
   background-color: grey;
 }
-.card-header {
+#accor-btn {
+  color: white;
+  font-size: 1.5rem;
 }
