@@ -24,6 +24,7 @@ h1 {
 }
 form {
   margin: 2rem 5rem;
+  padding: 1rem 0;
 }
 p {
   font-size: 2rem;
@@ -39,36 +40,42 @@ h3 {
 #accordion-section {
   background-color: black;
   color: white;
-  border-bottom: 8px solid rgb(54, 54, 54);
+  border-bottom: 8px solid rgb(69, 69, 69);
   padding-top: 2rem;
 }
 
 #tv-para,
 #moblie-para {
   line-height: 1.3;
-  font-size: 1.9rem;
 }
 .card-body {
   color: white;
-  background-color: rgb(91, 90, 90);
+  background-color: rgb(67, 67, 67);
   font-size: 0.8rem;
+}
+.card-body:hover {
+  background-color: rgb(111, 110, 110);
 }
 .card-para {
   font-size: 1.2rem;
 }
 .card {
-  background-color: grey;
+  background-color: rgb(67, 67, 67);
 }
 #accor-btn {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+#accor-btn:hover {
+  border: 0px;
 }
 #inputEmail {
-  height: 3rem;
+  height: 4rem;
   background-color: rgba(0, 0, 0, 0.8);
 }
-#get-btn {
-  height: 3rem;
+#get-btn,
+#btn {
+  height: 4rem;
   background-color: red;
   color: white;
   font-size: 1.4rem;
@@ -80,9 +87,23 @@ h3 {
   color: white;
   border: 0px;
 }
+#footer {
+  background-color: black;
+  color: white;
+}
+.footer-li {
+  color: rgb(172, 170, 170);
+  font-size: 1rem;
+}
+li {
+  margin-bottom: 0.8rem;
+}
+.footer-li:hover {
+  color: rgb(172, 170, 170);
+}
 @media (max-width: 59em) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   p {
     font-size: 1.2rem;
