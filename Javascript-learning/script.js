@@ -41,23 +41,22 @@ console.log(averagePopulation > population);
 
 const discription =
   country +
-  "is in" +
-  "" +
+  " is in " +
   continent +
-  ", and its" +
-  "" +
+  " , and its " +
   population +
-  "" +
-  "million people speak " +
+  " million people speak " +
   language;
 console.log(discription);
 
 //Task
 const massMark = 78;
-const heighMark = 1.68;
+const heightMark = 1.68;
 const massJohn = 92;
 const heightJohn = 1.95;
 
 const BMIJohn = massJohn / (heightJohn * heightJohn);
 const BMIMark = massMark / (heightMark * heightMark);
 console.log(BMIJohn, BMIMark);
+const markHigherBmi = BMIMark > BMIJohn;
+console.log(markHigherBmi);
