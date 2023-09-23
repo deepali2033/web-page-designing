@@ -61,7 +61,7 @@
 // const markHigherBmi = BMIMark > BMIJohn;
 // console.log(markHigherBmi);
 
-//Strings and Template Literals
+//Strings and Template Literal
 
 let language = "Hindi";
 let country = "India";
