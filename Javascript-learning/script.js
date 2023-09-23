@@ -80,7 +80,3 @@
 //     `${country} population is ${33 - population} millio below average`
 //   );
 // }
-4;
-617;
-
-false;
