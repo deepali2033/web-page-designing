@@ -72,11 +72,34 @@
 
 // Taking Decisions: if / else Statements
 // const country = "india";
-// const population = 1390;
+// const population = 13;
 // if (population > 33) {
 //   console.log(`${country} popuplation is 33 million above average `);
 // } else {
 //   console.log(
-//     `${country} population is ${33 - population} millio below average`
+//     `${country} population  \n\is ${33 - population} millio below average`
 //   );
 // }
+
+//  CODING CHALLENGE #2
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
+
+// const BMIMark = massMark / (heightMark * heightMark);
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// console.log(BMIMark, BMIJohn);
+// if (BMIMark > BMIJohn) {
+//   console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+// } else {
+//   console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
+// }
+
+//  Type Conversion and Coercion
+let A = "9" - "5"; //4
+let B = "19" - "13" + "17"; //617
+let C = "19" - "13" + 17; // 23
+let D = "123" < 57;
+let E = 5 + 6 + "4" + 9 - 4 - 2; //1143
+console.log(A, B, C, D, E);
