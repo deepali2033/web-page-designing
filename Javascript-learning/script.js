@@ -63,10 +63,24 @@
 
 //Strings and Template Literal
 
-let language = "Hindi";
-let country = "India";
-let continent = "Asia";
-let population = 1390;
+// let language = "Hindi";
+// let country = "India";
+// let continent = "Asia";
+// let population = 1390;
+// const description = ` ${country} is in ${continent}, and its ${population} million people speak ${language}`;
+// console.log(description);
 
-const description = ` ${country} is in ${continent}, and its ${population} million people speak ${language}`;
-console.log(description);
+// Taking Decisions: if / else Statements
+// const country = "india";
+// const population = 1390;
+// if (population > 33) {
+//   console.log(`${country} popuplation is 33 million above average `);
+// } else {
+//   console.log(
+//     `${country} population is ${33 - population} millio below average`
+//   );
+// }
+4;
+617;
+
+false;
