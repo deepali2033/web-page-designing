@@ -96,10 +96,44 @@
 //   console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
 // }
 
-//  Type Conversion and Coercion
-let A = "9" - "5"; //4
-let B = "19" - "13" + "17"; //617
-let C = "19" - "13" + 17; // 23
-let D = "123" < 57;
-let E = 5 + 6 + "4" + 9 - 4 - 2; //1143
-console.log(A, B, C, D, E);
+// //  Type Conversion and Coercion
+// let A = "9" - "5"; //4
+// let B = "19" - "13" + "17"; //617
+// let C = "19" - "13" + 17; // 23
+// let D = "123" < 57;
+// let E = 5 + 6 + "4" + 9 - 4 - 2; //1143
+// console.log(A, B, C, D, E);
+
+// Equality Operators: == vs. ===
+
+// let numNeighbour = prompt(
+//   "How many neighbour countries does your country have?"
+// );
+// if (numNeighbour == 1) {
+//   console.log("only 1 border!");
+// } else if (numNeighbour > 1) {
+//   console.log(" greater than 1");
+// } else {
+//   console.log("No border");
+// }
+
+// let numNeighbour = Number(
+//   prompt("How many neighbour countries does your country have?")
+// );
+// if (numNeighbour === 1) {
+//   console.log("only 1 border!");
+// } else if (numNeighbour > 1) {
+//   console.log(" greater than 1");
+// } else {
+//   console.log("No border");
+// }
+let country = "india";
+let language = prompt("enter your mother tungs");
+let population = prompt("enter your country population");
+let isItIsland = prompt("is it isItIsland");
+if (language == "english" && population < 50 && !isIsland) {
+  console.log(`You should live in (${country}) `);
+} else {
+  console.log(` ${country} does not meet your criteria :(
+  `);
+}
