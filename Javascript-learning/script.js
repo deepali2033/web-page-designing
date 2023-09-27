@@ -213,8 +213,14 @@ function percentageOfWorld1(population) {
 }
 function describePopulation(country, population) {
   const percentage = percentageOfWorld1(population);
-  return `${country} has ${population} million people, which is about ${percentage}% of the world.`;
+  if (percentage > 10) {
+    return `${country}'s population is too high`;
+  } else {
+    return `${country}'s population is not too high`;
+  }
 }
+//  return `${country} has ${population} million people, which is about ${percentage}% of the world.`;
+
 console.log(describePopulation("USA", 333));
 console.log(describePopulation("India", 1305));
 console.log(describePopulation("Canada", 40));
