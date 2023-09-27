@@ -198,11 +198,23 @@
 // console.log(describeCountry("India", 1304, "Delhi"));
 // console.log(describeCountry(" United States of America.", 333, "Washington"));
 // console.log(describeCountry("Canada", 40, "Ottawa"));
-const country = "china";
+
+// const country = "USA";
+// function percentageOfWorld1(population) {
+//   return (population / 7500) * 100;
+// }
+// const percUSA = percentageOfWorld1(333);
+// console.log(
+//   `${country} has  million people,so it's about ${percUSA} of the world population`
+// );
+
 function percentageOfWorld1(population) {
   return (population / 7500) * 100;
 }
-const percUSA = percentageOfWorld1(333);
-console.log(
-  `${country} has  million people,so it's about ${percUSA} of the world population`
-);
+function describePopulation(country, population) {
+  const percentage = percentageOfWorld1(population);
+  return `${country} has ${population} million people, which is about ${percentage}% of the world.`;
+}
+console.log(describePopulation("USA", 333));
+console.log(describePopulation("India", 1305));
+console.log(describePopulation("Canada", 40));
