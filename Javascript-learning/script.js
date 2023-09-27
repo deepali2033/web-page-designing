@@ -180,10 +180,29 @@
 // }
 
 //: The Conditional (Ternary) Operator
-const country = "india";
-const population = "33";
-const countryPopulation =
-  population > 33
-    ? country + " population is above average"
-    : country + " population is below average";
-console.log(countryPopulation);
+"use strict";
+// const country = "india";
+// const population = "33";
+// const countryPopulation =
+//   population > 33
+//     ? country + " population is above average"
+//     : country + " population is below average";
+// console.log(countryPopulation);
+
+// : Functions
+
+// function describeCountry(country, population, capitalCity) {
+//   const descriotion = `${country} has ${population} million people and its capital city is ${capitalCity}`;
+//   return descriotion;
+// }
+// console.log(describeCountry("India", 1304, "Delhi"));
+// console.log(describeCountry(" United States of America.", 333, "Washington"));
+// console.log(describeCountry("Canada", 40, "Ottawa"));
+const country = "china";
+function percentageOfWorld1(population) {
+  return (population / 7500) * 100;
+}
+const percUSA = percentageOfWorld1(333);
+console.log(
+  `${country} has  million people,so it's about ${percUSA} of the world population`
+);
