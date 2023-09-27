@@ -180,7 +180,7 @@
 // }
 
 //: The Conditional (Ternary) Operator
-"use strict";
+
 // const country = "india";
 // const population = "33";
 // const countryPopulation =
@@ -208,19 +208,38 @@
 //   `${country} has  million people,so it's about ${percUSA} of the world population`
 // );
 
-function percentageOfWorld1(population) {
-  return (population / 7500) * 100;
-}
-function describePopulation(country, population) {
-  const percentage = percentageOfWorld1(population);
-  if (percentage > 10) {
-    return `${country}'s population is too high`;
-  } else {
-    return `${country}'s population is not too high`;
-  }
-}
-//  return `${country} has ${population} million people, which is about ${percentage}% of the world.`;
+// function percentageOfWorld1(population) {
+//   return (population / 7500) * 100;
+// }
+// function describePopulation(country, population) {
+//   const percentage = percentageOfWorld1(population);
+//   if (percentage > 10) {
+//     return `${country}'s population is too high`;
+//   } else {
+//     return `${country}'s population is not too high`;
+//   }
+// }
+// //  return `${country} has ${population} million people, which is about ${percentage}% of the world.`;
 
-console.log(describePopulation("USA", 333));
-console.log(describePopulation("India", 1305));
-console.log(describePopulation("Canada", 40));
+// console.log(describePopulation("USA", 333));
+// console.log(describePopulation("India", 1305));
+// console.log(describePopulation("Canada", 40));
+"use strict";
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+// console.log(calcAverage(44, 23, 71));
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
+console.log(scoreKoalas, scoreDolphins);
+//  const checkWinner = (avgDolphins, avgKoalas)=>
+//   (avgDolphins>avgKoalas) ;
+const checkWinner = function (avgKoalas, avgDolphins) {
+  // const avgDolphins = calcAverage(scoreKoalas);
+  if (avgKoalas >= avgDolphins) {
+    console.log(`koalas win (${avgKoalas} vs ${avgDolphins}`);
+  } else if (avgDolphins >= avgKoalas) {
+    console.log(`koalas win (${avgDolphins} vs ${avgKoalas})`);
+  } else {
+    console.log("No team wins...");
+  }
+};
+checkWinner(scoreKoalas, scoreDolphins);
