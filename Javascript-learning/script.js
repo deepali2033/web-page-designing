@@ -224,22 +224,40 @@
 // console.log(describePopulation("USA", 333));
 // console.log(describePopulation("India", 1305));
 // console.log(describePopulation("Canada", 40));
-"use strict";
-const calcAverage = (a, b, c) => (a + b + c) / 3;
-// console.log(calcAverage(44, 23, 71));
-const scoreDolphins = calcAverage(44, 23, 71);
-const scoreKoalas = calcAverage(65, 54, 49);
-console.log(scoreKoalas, scoreDolphins);
-//  const checkWinner = (avgDolphins, avgKoalas)=>
-//   (avgDolphins>avgKoalas) ;
-const checkWinner = function (avgKoalas, avgDolphins) {
-  // const avgDolphins = calcAverage(scoreKoalas);
-  if (avgKoalas >= avgDolphins) {
-    console.log(`koalas win (${avgKoalas} vs ${avgDolphins}`);
-  } else if (avgDolphins >= avgKoalas) {
-    console.log(`koalas win (${avgDolphins} vs ${avgKoalas})`);
+// "use strict";
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
+// // console.log(calcAverage(44, 23, 71));
+// const scoreDolphins = calcAverage(44, 23, 71);
+// const scoreKoalas = calcAverage(65, 54, 49);
+// console.log(scoreKoalas, scoreDolphins);
+// //  const checkWinner = (avgDolphins, avgKoalas)=>
+// //   (avgDolphins>avgKoalas) ;
+// const checkWinner = function (avgKoalas, avgDolphins) {
+//   // const avgDolphins = calcAverage(scoreKoalas);
+//   if (avgKoalas >= avgDolphins) {
+//     console.log(`koalas win (${avgKoalas} vs ${avgDolphins}`);
+//   } else if (avgDolphins >= avgKoalas) {
+//     console.log(`koalas win (${avgDolphins} vs ${avgKoalas})`);
+//   } else {
+//     console.log("No team wins...");
+//   }
+// };
+// checkWinner(scoreKoalas, scoreDolphins);
+
+function calcTip(bills) {
+  if (bills >= 50 && bills <= 300) {
+    return bills * 0.15;
   } else {
-    console.log("No team wins...");
+    return bills * 0.2;
   }
-};
-checkWinner(scoreKoalas, scoreDolphins);
+}
+
+const bills = [112, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[1] + tips[1]];
+
+// console.log(tips);
+// console.log(bills);
+// console.log(totals);
+
+console.log(bills, tips, totals);
