@@ -244,6 +244,40 @@
 // };
 // checkWinner(scoreKoalas, scoreDolphins);
 
+/////////Array///////
+"use strict ";
+/*
+const popuplations = [113, 33, 40, 130];
+console.log(popuplations.length === 4);
+
+function percentageOfWorld1(population) {
+  return (population / 7500) * 100;
+}
+const percentage = [
+  percentageOfWorld1(popuplations[0]),
+  percentageOfWorld1(popuplations[1]),
+  percentageOfWorld1(popuplations[2]),
+  percentageOfWorld1(popuplations[3]),
+];
+console.log(percentage);
+*/
+
+/////////// Basic Array Operations (Methods)///////
+/*
+const neighbour = ["china", "pakistan", "bangladesh", "bhutan"];
+neighbour.push("utopia");
+console.log(neighbour);
+neighbour.pop();
+console.log(neighbour);
+if (!neighbour.includes("Germany")) {
+  console.log(`Probably not a central Indian countray:D`);
+}
+neighbour[neighbour.indexOf("pakistan")] = "Republic of Pakistan";
+console.log(neighbour);
+*/
+
+/////////CHALLENGE#2/////////
+/*
 function calcTip(bills) {
   if (bills >= 50 && bills <= 300) {
     return bills * 0.15;
@@ -251,13 +285,40 @@ function calcTip(bills) {
     return bills * 0.2;
   }
 }
-
-const bills = [112, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[1] + tips[1]];
-
-// console.log(tips);
-// console.log(bills);
-// console.log(totals);
-
+bills = [125, 555, 44];
+tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(bills, tips, totals);
+*/
+
+//////////////Object///////////
+
+// const courses = { languge: "Javascript" };
+// console.log(typeof courses);
+
+const myCountry = {
+  country: "India",
+  capital: "Delhi",
+  language: "Hindi",
+  population: 1304,
+  neighbours: ["China", "Pakistan", "Bangladesh"],
+};
+
+console.log(myCountry);
+console.log(
+  myCountry.country +
+    " has " +
+    myCountry.population +
+    " million finnish-speaking people," +
+    myCountry.neighbours +
+    " countries and a capital called " +
+    myCountry.capital
+);
+onsole.log(
+  ${myCountry.country}" has " 
+    ${myCountry.population} 
+  " million finnish-speaking people," +
+    myCountry.neighbours +
+    " countries and a capital called " +
+    myCountry.capital
+);
