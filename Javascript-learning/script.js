@@ -291,11 +291,11 @@ totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(bills, tips, totals);
 */
 
-//////////////Object///////////
+//////////////Object AND  Dot vs. Bracket Notation///////////
 
 // const courses = { languge: "Javascript" };
 // console.log(typeof courses);
-
+/*
 const myCountry = {
   country: "India",
   capital: "Delhi",
@@ -304,21 +304,21 @@ const myCountry = {
   neighbours: ["China", "Pakistan", "Bangladesh"],
 };
 
-console.log(myCountry);
 console.log(
-  myCountry.country +
-    " has " +
-    myCountry.population +
-    " million finnish-speaking people," +
-    myCountry.neighbours +
-    " countries and a capital called " +
-    myCountry.capital
+  `${myCountry.country} has ${myCountry.population} million finnish-speaking people, ${myCountry.neighbours.length} countries and a capital called ${myCountry.capital}`
 );
-onsole.log(
-  ${myCountry.country}" has " 
-    ${myCountry.population} 
-  " million finnish-speaking people," +
-    myCountry.neighbours +
-    " countries and a capital called " +
-    myCountry.capital
+console.log(
+  `${myCountry["country"]} has ${myCountry["population"]} million finnish-speaking people, ${myCountry["neighbours"].length} countries and a capital called ${myCountry["capital"]}`
 );
+*/
+
+/////////// Object Methods ////////
+
+const myCountry = {
+  country: "India",
+  capital: "Delhi",
+  language: "Hindi",
+  population: 1304,
+  neighbours: ["China", "Pakistan", "Bangladesh"],
+  describe: function () {},
+};
