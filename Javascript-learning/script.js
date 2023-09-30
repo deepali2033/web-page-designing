@@ -372,7 +372,33 @@ is higher than ${John.fullName}'s (${John.bmi})!`);
 */
 
 /////////The For Loop/////////
-
-for (tbl2 = 2; tbl2 <= 20; tbl2 * 2) {
+/*
+for (tbl2 = 2; tbl2 <= 20; tbl2 += 2) {
   console.log(tbl2);
 }
+
+for (let vot = 1; vot <= 50; vot++) {
+  console.log(`votoer number ${vot} is currently voting`);
+}
+*/
+/*
+const jonas = [
+  "jonas",
+  "Schmedtmann",
+  20049 - 2000,
+  "teachar",
+  ["michael", "peter", "steven"],
+  true,
+];
+const types = [];
+for (let i = 0; i < jonas.length; i++) {
+  ///// reading from jonas array
+  console.log(jonas[i], typeof jonas[i]);
+  //////filling types array
+  types[i] = typeof jonas[i];
+  //////////or///////
+  // types.push(typeof jonas[i]);
+}
+console.log(types);
+
+*/
