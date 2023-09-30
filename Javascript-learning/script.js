@@ -314,11 +314,59 @@ console.log(
 
 /////////// Object Methods ////////
 
-const myCountry = {
+/*const myCountry = {
   country: "India",
   capital: "Delhi",
   language: "Hindi",
   population: 1304,
   neighbours: ["China", "Pakistan", "Bangladesh"],
-  describe: function () {},
+  describe: function () {
+    return `${this.country} has ${this.population} million finnish-speaking people,${this.neighbours.length} countries and a capital called ${this.capital}`;
+  },
+  checkIsland: function () {
+    
+    if (!this.neighbours) {
+      return "true";
+    } else {
+      return "false";
+    }
+    
+    // this.neighbours.length === 0 ? true : false;
+  }
+
+
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
+*/
+
+///////////CHALLENGE #3/////////
+/*
+const mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.68,
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
 };
+const John = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
+};
+mark.calcBMI();
+John.calcBMI();
+console.log(mark.bmi, John.bmi);
+if (John.calcBMI > mark.calcBMI) {
+  console.log(`${John.fullName}'s BMI ( ${john.bmi}) 
+is higher than ${mark.fullName}'s (${mark.bmi})!`);
+} else {
+  console.log(`${mark.fullName}'s BMI (${mark.bmi}) 
+is higher than ${John.fullName}'s (${John.bmi})!`);
+}
+*/
