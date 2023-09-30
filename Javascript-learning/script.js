@@ -370,3 +370,9 @@ is higher than ${mark.fullName}'s (${mark.bmi})!`);
 is higher than ${John.fullName}'s (${John.bmi})!`);
 }
 */
+
+/////////The For Loop/////////
+
+for (tbl2 = 2; tbl2 <= 20; tbl2 * 2) {
+  console.log(tbl2);
+}
