@@ -382,6 +382,8 @@ for (let vot = 1; vot <= 50; vot++) {
 }
 */
 /*
+
+///////////: Looping Arrays, Breaking and Continuing////////
 const jonas = [
   "jonas",
   "Schmedtmann",
@@ -402,3 +404,80 @@ for (let i = 0; i < jonas.length; i++) {
 console.log(types);
 
 */
+//////////-----ONLY STRINGS(Continue)------///////
+/*
+const jonas = [
+  "jonas",
+  "Schmedtmann",
+  "teachar",
+  20049 - 2000,
+  ["michael", "peter", "steven"],
+  true,
+];
+// // for (let i = 0; i < jonas.length; i++) {
+//   if (typeof jonas[i] !== "string") continue;
+//   console.log(jonas[i], typeof jonas[i]);
+// }
+//////////------BREAK WITH NUMBER(break)-------////////
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] === "number") break;
+  console.log(jonas[i], typeof jonas[i]);
+}
+*/
+/*
+const popuplations = [113, 33, 40, 130];
+const percentage2 = [];
+function percentageOfWorld1(population) {
+  return (population / 7500) * 100;
+}
+const percentage = [
+  percentageOfWorld1(popuplations[0]),
+  percentageOfWorld1(popuplations[1]),
+  percentageOfWorld1(popuplations[2]),
+  percentageOfWorld1(popuplations[3]),
+];
+// console.log(percentage);
+for (i = 0; i < popuplations.length; i++) {
+  const perc = percentageOfWorld1(popuplations[i]);
+  percentage2.push(perc);
+}
+console.log(popuplations, percentage2);
+*/
+/////////////Looping Backwards and Loops in Loops///////////
+/*
+const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+for (let i = 0; i < listOfNeighbours.length; i++)
+  for (let y = 0; y < listOfNeighbours[i].length; y++)
+    console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+*/
+/*
+function calcTip(bills) {
+  if (bills >= 50 && bills <= 300) {
+    return bills * 0.15;
+  } else {
+    return bills * 0.2;
+  }
+}
+bills = [125, 555, 44];
+tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(bills, tips, totals);
+*/
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const calcTip = function (bills) {
+  return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+};
+for (i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+}
+for (i = 0; i < bills.length; i++) {
+  totals = bills[i] + tips[i];
+  console.log(`${bills[i]} + ${tips[i]} = ${totals}`);
+}
