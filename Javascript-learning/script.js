@@ -487,7 +487,5 @@ for (i = 0; i < bills.length; i++) {
 //   const sum = a + b;
 //   return sum;
 // }
-function (){
 
-}
 // console.log(sum(23, 87));
