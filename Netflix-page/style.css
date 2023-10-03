@@ -53,10 +53,10 @@ h3 {
 }
 .card-body {
   color: white;
-  background-color: rgb(67, 67, 67);
+  background-color: rgb(102, 102, 102);
   font-size: 0.8rem;
 }
-.card-body:hover {
+.card-body:active {
   background-color: rgb(111, 110, 110);
 }
 .card-para {
@@ -65,6 +65,7 @@ h3 {
 .card {
   background-color: rgb(67, 67, 67);
 }
+
 #accor-btn {
   color: white;
   font-size: 1.2rem;
