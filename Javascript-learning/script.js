@@ -483,8 +483,11 @@ for (i = 0; i < bills.length; i++) {
 }
 */
 /////////////Basic Programming Questions/////////////
-function sum(a, b) {
-  const sum = a + b;
-  return sum;
+// function sum(a, b) {
+//   const sum = a + b;
+//   return sum;
+// }
+function (){
+
 }
-console.log(sum(23, 87));
+// console.log(sum(23, 87));
