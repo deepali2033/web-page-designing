@@ -489,3 +489,13 @@ for (i = 0; i < bills.length; i++) {
 // }
 
 // console.log(sum(23, 87));
+const x = prompt("Enter X value");
+const y = prompt("Enter Y value");
+const z = (x + 10) / (3 * y);
+console.log(z);
+// function main(x, y) {
+//   const z = (x + 10) / (3 * y);
+//   return z;
+// }
+// const zVolue = main(100.6);
+// console.log(Math.trunc(zVolue));
