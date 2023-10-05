@@ -489,13 +489,21 @@ for (i = 0; i < bills.length; i++) {
 // }
 
 // console.log(sum(23, 87));
-const x = prompt("Enter X value");
-const y = prompt("Enter Y value");
-const z = (x + 10) / (3 * y);
-console.log(z);
+// const x = prompt("Enter X value");
+// const y = prompt("Enter Y value");
+// const z = (x + 10) / (3 * y);
+// console.log(z);
 // function main(x, y) {
 //   const z = (x + 10) / (3 * y);
 //   return z;
 // }
 // const zVolue = main(100.6);
 // console.log(Math.trunc(zVolue));
+
+let i = 2;
+let b = 1;
+while (i <= 20 && b <= 10) {
+  console.log(`2*${b} = ${i}`);
+  i = 2 * b;
+  b++;
+}
