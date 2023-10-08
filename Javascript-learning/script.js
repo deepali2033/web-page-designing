@@ -501,7 +501,7 @@ for (i = 0; i < bills.length; i++) {
 // console.log(Math.trunc(zVolue));
 
 let i = 2;
-let s;
+
 let b = 1;
 while (i <= 20 && b <= 10) {
   console.log(`2*${b} = ${i}`);
