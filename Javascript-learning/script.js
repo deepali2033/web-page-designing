@@ -482,6 +482,7 @@ for (i = 0; i < bills.length; i++) {
   console.log(`${bills[i]} + ${tips[i]} = ${totals}`);
 }
 */
+
 /////////////Basic Programming Questions/////////////
 // function sum(a, b) {
 //   const sum = a + b;
@@ -500,11 +501,11 @@ for (i = 0; i < bills.length; i++) {
 // const zVolue = main(100.6);
 // console.log(Math.trunc(zVolue));
 
-let i = 2;
+// let i = 2;
 
-let b = 1;
-while (i <= 20 && b <= 10) {
-  console.log(`2*${b} = ${i}`);
-  i = 2 * b;
-  b++;
-}
+// let b = 1;
+// while (i <= 20 && b <= 10) {
+//   console.log(`2*${b} = ${i}`);
+//   i = 2 * b;
+//   b++;
+// }
