@@ -483,6 +483,21 @@ for (i = 0; i < bills.length; i++) {
 }
 */
 
+//////////paturns///////
+let n;
+prompt("Enter n number");
+i = 1;
+while (i <= n) {
+  j = 1;
+  while (j <= i) {
+    console.log(j);
+    j++;
+  }
+
+  console.log(i);
+  i++;
+}
+
 /////////////Basic Programming Questions/////////////
 // function sum(a, b) {
 //   const sum = a + b;
