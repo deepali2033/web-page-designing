@@ -496,6 +496,16 @@ for (i = 0; i < bills.length; i++) {
 var n = prompt("Enetr n number ");
 i = 1;
 while (i <= n) {
+  // k = 1;
+  // while (k <= i) {
+  //   document.write(k);
+  //   k++;
+  // }
+  j = 1;
+  while (j <= n - i) {
+    document.write("*");
+    j++;
+  }
   k = 1;
   while (k <= i) {
     document.write(k);
