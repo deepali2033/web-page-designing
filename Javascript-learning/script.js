@@ -483,8 +483,8 @@ for (i = 0; i < bills.length; i++) {
 }
 */
 
-//////////paturns///////
-let n = prompt("enter n number");
+// //////////paturns///////
+// var n = prompt("enter n number");
 
 // for (let i = 1; i <= n; i++) {
 //   let row = "";
@@ -493,15 +493,16 @@ let n = prompt("enter n number");
 //   }
 //   console.log(row);
 // }
+var n = prompt("Enetr n number ");
 i = 1;
 while (i <= n) {
-  j = 1;
-  while (j <= i) {
-    console.log(j);
-    j++;
+  k = 1;
+  while (k <= i) {
+    document.write(k);
+    k++;
   }
 
-  console.log(" ");
+  document.write("<br>");
   i++;
 }
 
