@@ -70,7 +70,8 @@
 // const description = ` ${country} is in ${continent}, and its ${population} million people speak ${language}`;
 // console.log(description);
 
-// Taking Decisions: if / else Statements
+///////// Taking Decisions: if / else Statements////////////
+
 // const country = "india";
 // const population = 13;
 // if (population > 33) {
@@ -80,6 +81,22 @@
 //     `${country} population  \n\is ${33 - population} millio below average`
 //   );
 // }
+/*
+const per = prompt("Enter percentage  :");
+
+if (per >= 80 && per <= 100) {
+    document.write("You are in the merit list. <br>");
+} else if (per >= 45 && per < 80) {
+    document.write("You are in 2nd division. <br>");
+} else if (per >= 33 && per < 45) {
+    document.write("You are in 3rd division. <br>");
+} else if (per < 33) {
+    document.write("You have failed. <br>");
+} else {
+  document.write("please write valid percentage" )
+}
+ 
+*/
 
 //  CODING CHALLENGE #2
 // const massMark = 78;
@@ -155,7 +172,7 @@
 //   console.log("Not a valid day!");
 // }
 
-//  The switch Statement
+///////// The switch Statement/////////
 
 // const language = "english";
 // switch (language) {
@@ -178,6 +195,28 @@
 //   default:
 //     console.log("Great Language too :D");
 // }
+/*
+const per = prompt("Enter percentage  :");
+switch (true) {
+  case per >= 80 && per <= 100:
+    document.write("your in merit list <br>");
+    break;
+  case per >= 60 && per <= 79:
+    document.write("your in 1st division <br>");
+    break;
+  case per >= 45 && per <= 59:
+    document.write("your in 2nd division <br>");
+    break;
+  case per >= 33 && per <= 45:
+    document.write("your in 3rd division <br>");
+    break;
+  case per <= 33:
+    document.write("your fail <br>");
+    break;
+  default:
+    document.write("write valid percentage <br>");
+}
+*/
 
 //: The Conditional (Ternary) Operator
 
@@ -189,7 +228,7 @@
 //     : country + " population is below average";
 // console.log(countryPopulation);
 
-// : Functions
+////////// : Functions ///////
 
 // function describeCountry(country, population, capitalCity) {
 //   const descriotion = `${country} has ${population} million people and its capital city is ${capitalCity}`;
@@ -245,7 +284,7 @@
 // checkWinner(scoreKoalas, scoreDolphins);
 
 /////////Array///////
-"use strict ";
+("use strict ");
 /*
 const popuplations = [113, 33, 40, 130];
 console.log(popuplations.length === 4);
@@ -275,6 +314,33 @@ if (!neighbour.includes("Germany")) {
 neighbour[neighbour.indexOf("pakistan")] = "Republic of Pakistan";
 console.log(neighbour);
 */
+
+/////////(arrey join ,isarrey and concat method)
+/*
+const w = ["pakistan", "Afghanistan", "Iran", "Oman"];
+const e = ["Myanmar", "Thiland", "Vietnam", "bhutan"];
+
+const neighbour = w.concat(e, "Shrilanka");
+const nei = neighbour.join(" - ");
+document.write(neighbour, "<br><br>");
+document.write(nei, "<br>");
+const a = Array.isArray(e);
+if (a == true) {
+  document.write("this is an arrey");
+}
+*/
+
+///////////indexOf & lastIndexOf///////
+/*
+var a = ["Deepali", "Shivani", "Anjali", "Ritika"];
+//(indexOf("search item",start))
+var b = a.indexOf("Anjali", 0);
+document.write(b, "<br>");
+//(lastIndexOf("searchnitem",start from last))
+var c = a.lastIndexOf("Deepali", 2);
+document.write(c);
+*/
+///////arrey  slice and splice////////
 
 /////////CHALLENGE#2/////////
 /*
@@ -493,6 +559,7 @@ for (i = 0; i < bills.length; i++) {
 //   }
 //   console.log(row);
 // }
+/*
 var n = prompt("Enetr n number ");
 i = 1;
 while (i <= n) {
@@ -515,6 +582,7 @@ while (i <= n) {
   document.write("<br>");
   i++;
 }
+*/
 
 /////////////Basic Programming Questions/////////////
 // function sum(a, b) {
