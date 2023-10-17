@@ -340,6 +340,13 @@ document.write(b, "<br>");
 var c = a.lastIndexOf("Deepali", 2);
 document.write(c);
 */
+//////////includes arrey///////////
+/*
+var a = ["Deepali", "Shivani", "Anjali", "Ritika"];
+var c = a.includes("Ritika");
+var b = a.includes("anshu");
+document.write(c, "<br>", b);
+*/
 ///////arrey  slice and splice////////
 
 /////////CHALLENGE#2/////////
