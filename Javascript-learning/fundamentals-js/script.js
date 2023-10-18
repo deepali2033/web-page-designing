@@ -173,28 +173,28 @@ if (per >= 80 && per <= 100) {
 // }
 
 ///////// The switch Statement/////////
-
-// const language = "english";
-// switch (language) {
-//   case "chinese":
-//   case "mandarin":
-//     console.log("MOST number of native speakers!");
-//     break;
-//   case "spanish":
-//     console.log("2nd place in number of native speakers");
-//     break;
-//   case "english":
-//     console.log("3rd place");
-//     break;
-//   case "hindi":
-//     console.log("Number 4");
-//     break;
-//   case "arabic":
-//     console.log("5th most spoken language");
-//     break;
-//   default:
-//     console.log("Great Language too :D");
-// }
+/*
+const language = "english";
+switch (language) {
+  case "chinese":
+  case "mandarin":
+    console.log("MOST number of native speakers!");
+    break;
+  case "spanish":
+    console.log("2nd place in number of native speakers");
+    break;
+  case "english":
+    console.log("3rd place");
+    break;
+  case "hindi":
+    console.log("Number 4");
+    break;
+  case "arabic":
+    console.log("5th most spoken language");
+    break;
+  default:
+    console.log("Great Language too :D");
+}*/
 /*
 const per = prompt("Enter percentage  :");
 switch (true) {
@@ -284,7 +284,7 @@ switch (true) {
 // checkWinner(scoreKoalas, scoreDolphins);
 
 /////////Array///////
-("use strict ");
+("use strict "); /*
 /*
 const popuplations = [113, 33, 40, 130];
 console.log(popuplations.length === 4);
@@ -314,6 +314,7 @@ if (!neighbour.includes("Germany")) {
 neighbour[neighbour.indexOf("pakistan")] = "Republic of Pakistan";
 console.log(neighbour);
 */
+/*
 var createCounter = function (n) {
   return function () {
     let cur = (n += 1);
@@ -326,7 +327,7 @@ coun(); // 10
 coun(); // 11
 coun(); // 12
 document.write(coun());
-/**
+*/
 /////////(array join ,isarray and concat method)
 /*
 const w = ["pakistan", "Afghanistan", "Iran", "Oman"];
