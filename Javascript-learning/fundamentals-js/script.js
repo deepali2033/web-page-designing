@@ -631,3 +631,17 @@ while (i <= n) {
 //    b++;
 // }
 ///////////Array que from section-5(59 lec)/////////
+
+const calTempAmplitude = function (temps) {
+  let max = temps[0];
+  let min = temps[0];
+  for (let i = 0; i < temps.length; i++) {
+    if (typeof temps[i] == String) continue;
+    if (temps[i] > max) max = temps[i];
+
+    if (temps[i] < min) min = temps[i];
+  }
+  console.log(max, min);
+  return max - min;
+};
+const aplitude = console.log(calTempAmplitude([10, 5, 9, 6, "error", -2, -4]));
