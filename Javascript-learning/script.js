@@ -314,8 +314,20 @@ if (!neighbour.includes("Germany")) {
 neighbour[neighbour.indexOf("pakistan")] = "Republic of Pakistan";
 console.log(neighbour);
 */
+var createCounter = function (n) {
+  return function () {
+    let cur = (n += 1);
+    return cur;
+  };
+};
 
-/////////(arrey join ,isarrey and concat method)
+const coun = createCounter(11);
+coun(); // 10
+coun(); // 11
+coun(); // 12
+document.write(coun());
+/**
+/////////(array join ,isarray and concat method)
 /*
 const w = ["pakistan", "Afghanistan", "Iran", "Oman"];
 const e = ["Myanmar", "Thiland", "Vietnam", "bhutan"];
