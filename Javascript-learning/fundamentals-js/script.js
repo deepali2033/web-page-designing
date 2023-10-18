@@ -630,3 +630,4 @@ while (i <= n) {
 //   i = 2 * b;
 //    b++;
 // }
+///////////Array que from section-5(59 lec)/////////
