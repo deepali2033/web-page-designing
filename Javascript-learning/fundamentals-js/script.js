@@ -632,7 +632,9 @@ while (i <= n) {
 // }
 ///////////Array que from section-5(59 lec)/////////
 
-const calTempAmplitude = function (temps) {
+const calTempAmplitude = function (t1, t2) {
+  const temps = t1.concat(t2);
+  console.log(temps);
   let max = temps[0];
   let min = temps[0];
   for (let i = 0; i < temps.length; i++) {
@@ -644,4 +646,6 @@ const calTempAmplitude = function (temps) {
   console.log(max, min);
   return max - min;
 };
-const aplitude = console.log(calTempAmplitude([10, 5, 9, 6, "error", -2, -4]));
+const aplitude = console.log(
+  calTempAmplitude([9, 6, "error", -2], [10, 4, -20])
+);
