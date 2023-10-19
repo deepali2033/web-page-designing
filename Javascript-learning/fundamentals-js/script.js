@@ -631,10 +631,10 @@ while (i <= n) {
 //    b++;
 // }
 ///////////Array que from section-5(59 lec)/////////
-
+/*
 const calTempAmplitude = function (t1, t2) {
   const temps = t1.concat(t2);
-  console.log(temps);
+  console.table(temps);
   let max = temps[0];
   let min = temps[0];
   for (let i = 0; i < temps.length; i++) {
@@ -646,6 +646,13 @@ const calTempAmplitude = function (t1, t2) {
   console.log(max, min);
   return max - min;
 };
-const aplitude = console.log(
-  calTempAmplitude([9, 6, "error", -2], [10, 4, -20])
-);
+const aplitude = calTempAmplitude([9, 6, "error", -2], [10, 4, -20]);
+console.log(aplitude);
+*/
+const printForecast = function (arr) {
+  console.log(`....${arr[0]}C in 1 days`);
+  console.log(`....${arr[1]}C in 2 days`);
+  console.log(`....${arr[2]}C in 3 days`);
+};
+
+console.log(printForecast(21, 32, 45));
