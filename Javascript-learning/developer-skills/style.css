@@ -87,10 +87,12 @@ h1 {
   transform: translate(-50%, 50%);
 }
 .guess {
-  padding: 18px 0px;
+  padding: 0px 0px;
   background-color: #222;
   border: 2px solid #eee;
   margin: 2rem;
+  color: #eee;
+  font-size: 2rem;
 }
 .message {
   margin-bottom: 3rem;
