@@ -10,17 +10,22 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").textContent = "No number";
   } else if (guess === secretNumber) {
     document.querySelector(".message").textContent = "Correct Number ";
+    document.querySelector("body").style.backgroundColor = "#4de424";
+    document.querySelector(".guess").style.backgroundColor = "#eee";
+    document.querySelector(".guess").style.color = "#222";
   } else if (guess < secretNumber) {
-    if (score > 0) {
-      document.querySelector(".message").textContent = "Too Low ";
+    if (score > 1) {
+      document.querySelector(".message").textContent = "Too low ";
       score--;
       document.querySelector(".score").textContent = score;
     } else {
       document.querySelector(".message").textContent = "you lost the game! ";
+
+      document.querySelector("body").style.backgroundColor = "#f43939;";
     }
   } else if (guess > secretNumber) {
     if (score > 1) {
-      document.querySelector(".message").textContent = "Too Low ";
+      document.querySelector(".message").textContent = "Too high ";
       score--;
       document.querySelector(".score").textContent = score;
     } else {
