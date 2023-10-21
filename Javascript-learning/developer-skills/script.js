@@ -35,3 +35,12 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   }
 });
+document.querySelector(".again").addEventListener("click", function () {
+  document.querySelector(".guess").value = " ";
+  document.querySelector(".number").textContent = "?";
+  document.querySelector(".message").textContent = "Start guessing....";
+  document.querySelector(".score").textContent = score;
+  document.querySelector("body").style.backgroundColor = "#222";
+  document.querySelector(".guess").style.backgroundColor = "#222";
+  document.querySelector(".guess").style.color = "#eee";
+});
