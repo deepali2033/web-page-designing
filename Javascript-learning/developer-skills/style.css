@@ -51,6 +51,11 @@ h1 {
   font-family: inherit;
   padding: 2rem 3rem;
   cursor: pointer;
+  border-radius: 10px;
+}
+btn:hover {
+  background-color: #b3b2b2;
+  border: #3474e3;
 }
 .between {
   position: absolute;
@@ -87,12 +92,15 @@ h1 {
   transform: translate(-50%, 50%);
 }
 .guess {
-  padding: 0px 0px;
+  padding: 10px 0px;
   background-color: #222;
   border: 2px solid #eee;
   margin: 2rem;
   color: #eee;
   font-size: 2rem;
+  width: 15rem;
+  font-size: 8rem;
+  text-align: center;
 }
 .message {
   margin-bottom: 3rem;
