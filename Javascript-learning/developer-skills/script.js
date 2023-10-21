@@ -21,7 +21,9 @@ document.querySelector(".check").addEventListener("click", function () {
     } else {
       document.querySelector(".message").textContent = "you lost the game! ";
 
-      document.querySelector("body").style.backgroundColor = "#f43939;";
+      document.querySelector("body").style.backgroundColor = "#fc330b";
+      document.querySelector(".guess").style.backgroundColor = "#eee";
+      document.querySelector(".guess").style.color = "#222";
     }
   } else if (guess > secretNumber) {
     if (score > 1) {
