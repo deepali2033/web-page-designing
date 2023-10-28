@@ -25,11 +25,15 @@ body {
   border-radius: 10rem;
   color: #444;
 }
-
-.modal {
-  background-color: #eee;
-  width: 70%;
-  display: none;
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
 
 h1 {
