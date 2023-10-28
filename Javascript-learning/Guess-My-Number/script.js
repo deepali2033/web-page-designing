@@ -18,6 +18,8 @@ document.querySelector(".check").addEventListener("click", function () {
     writeMessage("🥳 Correct Number!");
     document.querySelector("body").style.backgroundColor = "#4de424";
     document.querySelector(".guess").style.backgroundColor = "#4de424";
+    document.querySelector(".number").style.width = "20rem";
+    document.querySelector(".number").textContent = secretNumber;
     if (score > highscore) {
       highscore = score;
       document.querySelector(".highscore").textContent = highscore;
@@ -68,6 +70,4 @@ document.querySelector(".again").addEventListener("click", function () {
   console.log((document.querySelector(".score").textContent = score));
   document.querySelector("body").style.backgroundColor = "#222";
   document.querySelector(".guess").style.backgroundColor = "#222";
-
-  document.querySelector(".number").style.width = "15rem";
 });
