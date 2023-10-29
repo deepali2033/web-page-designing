@@ -13,7 +13,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
-  background: linear-gradient(to top left, #28b487, #7dd56f);
+  background: linear-gradient(to top left, #28b487, #104d78);
 }
 .show-modal {
   padding: 1rem 3rem;
