@@ -5,15 +5,17 @@ const diceEL = document.querySelector(".dice");
 const btnNew = document.querySelector(".btn--new");
 const btnRoll = document.querySelector(".btn--roll");
 const btnhold = document.querySelector(".btn--hold");
-const current0EL = document.querySelector(".current--0");
-const current1EL = document.querySelector(".current--1");
-console.log(score0EL, score1EL, current0EL, current1EL);
+const current0EL = document.getElementById("current--0");
+const current1EL = document.getElementById("current--1");
+// console.log(score0EL, score1EL, current0EL, current1EL);
 //starting condition//
 score0EL.textContent = 0;
 score1EL.textContent = 0;
 diceEL.classList.add("hidden");
 
+const score = [0, 0];
 let currentScore = 0;
+let activePlayer = 0;
 
 //  Rolling dice functionality
 btnRoll.addEventListener("click", function () {
@@ -23,13 +25,16 @@ btnRoll.addEventListener("click", function () {
   // 2. Display dice
   diceEL.classList.remove("hidden");
   diceEL.src = `dice-${dice}.png`;
-  console.log(dice);
+  // console.log(dice);
 
   // 3. Check for rolled 1
   if (dice !== 1) {
     currentScore += dice;
-    // current0EL.textContent = currentScore;
-    console.log(dice, currentScore);
+    console.log(
+      (document.getElementById(`current--${activePlayer}`).textContent =
+        currentScore)
+    );
   } else {
+    activePlayer = activePlayer === 0 ? 1 : 0;
   }
 });
