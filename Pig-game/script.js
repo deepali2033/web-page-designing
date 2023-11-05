@@ -31,12 +31,14 @@ btnRoll.addEventListener("click", function () {
 
   // 3. Check for rolled 1
   if (dice !== 1) {
+    //  Add Dice to current score
     currentScore += dice;
     console.log(
       (document.getElementById(`current--${activePlayer}`).textContent =
         currentScore)
     );
   } else {
+    // Switch to next player
     document.getElementById(`current--${activePlayer}`).textContent = 0;
     currentScore = 0;
     activePlayer = activePlayer === 0 ? 1 : 0;
@@ -44,3 +46,5 @@ btnRoll.addEventListener("click", function () {
     player1EL.classList.toggle("player--active");
   }
 });
+
+btnhold.addEventListener("click", function () {});
