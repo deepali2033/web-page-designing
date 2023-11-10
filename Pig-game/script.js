@@ -86,4 +86,4 @@ btnHold.addEventListener("click", function () {
     switchPlayer();
   }
 });
-btnNew.addEventListene("click", init);
+btnNew.addEventListener("click", init);
