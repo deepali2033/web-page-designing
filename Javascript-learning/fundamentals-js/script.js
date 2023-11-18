@@ -649,6 +649,7 @@ const calTempAmplitude = function (t1, t2) {
 const aplitude = calTempAmplitude([9, 6, "error", -2], [10, 4, -20]);
 console.log(aplitude);
 */
+/*
 const printForecast = function (arr) {
   console.log(`....${arr[0]}C in 1 days`);
   console.log(`....${arr[1]}C in 2 days`);
@@ -656,3 +657,20 @@ const printForecast = function (arr) {
 };
 
 console.log(printForecast(21, 32, 45));
+*/
+const a = 'jonas';
+first()
+function first(){
+  const b='hello';
+  second()
+}
+function second(){
+  const c ='hii'
+  third()
+}
+const c ='okay';
+function third(){
+  const d ='hey!'
+  const c='okay'
+  console.log(d+c);
+}
