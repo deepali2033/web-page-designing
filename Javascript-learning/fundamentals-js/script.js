@@ -670,7 +670,7 @@ function second(){
 }
 const c ='okay';
 function third(){
-  const d ='hey!'
+  const d ='hey'
   const c='okay'
   console.log(d+c);
 }
