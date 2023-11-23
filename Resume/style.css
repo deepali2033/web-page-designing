@@ -1,10 +1,14 @@
 #nav {
-  background-color: rgb(43, 43, 43);
-  color: white;
+  /* background-color: rgb(43, 43, 43); */
+  color: rgb(150, 149, 149);
+  margin: 2rem 3.5rem 0 3.5rem ;
 }
 body{
   background-image: url('bg.webp');
 }
 .k-img{
   width: 2.5rem;
+}
+.span{
+  color: rgb(123, 198, 244);
 }
