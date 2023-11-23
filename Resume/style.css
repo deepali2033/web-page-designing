@@ -2,3 +2,9 @@
   background-color: rgb(43, 43, 43);
   color: white;
 }
+body{
+  background-image: url('bg.webp');
+}
+.k-img{
+  width: 2.5rem;
+}
