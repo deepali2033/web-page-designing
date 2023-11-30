@@ -658,6 +658,7 @@ const printForecast = function (arr) {
 
 console.log(printForecast(21, 32, 45));
 */
+/*
 const a = 'jonas';
 first()
 function first(){
@@ -674,3 +675,17 @@ function third(){
   const c='okay'
   console.log(d+c);
 }
+*/
+ const name ='deepali';
+ const first=()=>{
+  let a=1;
+  const b= second(7,9);
+  a=a+b;
+  return a;
+
+ }
+ function second(x,y){
+  var c=8;
+  return c;
+ }
+ const x=console.log( first());
