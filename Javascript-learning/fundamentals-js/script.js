@@ -674,8 +674,8 @@ function third(){
   const d ='hey'
   const c='okay'
   console.log(d+c);
-}
-*/
+}*/
+/*
  const name ='deepali';
  const first=()=>{
   let a=1;
@@ -689,3 +689,165 @@ function third(){
   return c;
  }
  const x=console.log( first());
+ */
+/////////scoping/////////////////
+/*
+'use strict';
+
+function calcAge(birthYear){
+  const age =2037-birthYear;
+  console.log(firstName);
+  return age;
+}
+*/
+'use strict';
+
+
+/*
+////////////Destructuring Arrey//////////
+const restaurant ={
+  name:'Classico I taliano',
+  location:'Via Angelo Tanvajti 23, Firenze, Italy',
+  categories:['Italin','Pizzeria','Vegetarian','Organic','fastFood'],
+
+starterMenu: ['Focaccia','Bruschetta','Garlic','Bread','Caprese Salad'],
+mainMenu:['Pizza','Pasta','Risotto'],
+openingHours:{
+  thu:{
+    open:12,
+    close:22
+  },
+  fri:{
+    open:11,
+    close:23,
+  },
+  sat:{
+    open:0, //open 24 hours
+    close:24,
+  },
+},
+order: function(starerIndex,mainIndex){
+  return[ this.starterMenu[starerIndex] ,this.mainMenu[mainIndex]];
+}
+}
+const arr=[2,4,6];
+const a=arr[0];
+const b=arr[1];
+const c=arr[2];
+const [x,y,z]=arr;
+console.log(x,y,z);
+console.log(arr);
+
+
+ let [main,secodary,...restvalue]=restaurant.categories;
+  console.log(main,secodary,...restvalue);
+
+// switching variable
+
+//  const temp =main;
+//  main=secondary;
+//  secondary=temp;
+//  console.log(main,secondary)
+
+[main ,secodary]=[secodary,main];
+console.log(main,secodary);
+
+
+//receive 2 return values from a function
+const[starter,mainCourse]=restaurant.order(2,1);
+console.log(starter,mainCourse);
+
+
+// Nested destrucuring
+const nested =[,4,5,[3,6]];
+const [i, ,[j,k]]=nested;
+console.log(i,j,k)
+
+// Default values
+const[p,q,r]=[9,7];
+console.log(p,q,r);
+*/
+
+/*
+//////////////////Object Destructuring////////////
+// Example 1: Basic object destructuring
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 30,
+  city: "New York",
+};
+
+const { firstName, lastName, age } = person;
+
+console.log(firstName);  // Output: John
+console.log(lastName);   // Output: Doe
+console.log(age);        // Output: 30
+
+
+// Example: Renaming variables during object destructuring
+const student = {
+  name: "Alice",
+  age: 22,
+  grade: "A",
+};
+
+const { name: studentName, age: studentAge, grade: studentGrade } = student;
+
+console.log(studentName);  // Output: Alice
+console.log(studentAge);   // Output: 22
+console.log(studentGrade); // Output: A
+
+// Example: Providing default values in object destructuring
+const car = {
+  make: "Toyota",
+  model: "Camry",
+  year: 2020,
+};
+
+const { make, model, color = "blue" } = car;
+
+console.log(make);   // Output: Toyota
+console.log(model);  // Output: Camry
+console.log(color);  // Output: blue (default value)
+
+
+// Example: Nested object destructuring
+const employee = {
+  id: 123,
+  name: "Jane",
+  position: "Developer",
+  address: {
+    city: "San Francisco",
+    zip: "94105",
+  },
+};
+
+const { name, position, address: { city, zip } } = employee;
+
+console.log(name);  // Output: Jane
+console.log(position);  // Output: Developer
+console.log(city);  // Output: San Francisco
+console.log(zip);  // Output: 94105
+*/
+
+
+
+///////////Spread Operator(...)///////
+const arr=[4,6,9];
+const badNewAee=[1,2,arr[0],arr[1],arr[2]]
+console.log(badNewAee)
+
+const newArr=[1,2,...arr]
+console.log(badNewAee)
+console.log(...newArr)
+
+// Join 2 array
+ const array={starterMenu: ['Focaccia','Bruschetta','Garlic','Bread','Caprese Salad'],
+mainMenu:['Pizza','Pasta','Risotto']}
+const menu=[...array.starterMenu,...array.mainMenu]
+console.log(menu)
+
+const str='deepali';
+const letters=[...str,'','s.'];
+console.log(letters)
