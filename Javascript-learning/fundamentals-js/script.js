@@ -842,7 +842,7 @@ const newArr=[1,2,...arr]
 console.log(badNewAee)
 console.log(...newArr)
 
-// Join 2 array
+// Join 2 array //
  const array={starterMenu: ['Focaccia','Bruschetta','Garlic','Bread','Caprese Salad'],
 mainMenu:['Pizza','Pasta','Risotto']}
 const menu=[...array.starterMenu,...array.mainMenu]
