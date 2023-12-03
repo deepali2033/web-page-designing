@@ -940,3 +940,4 @@ let isIndia =true;
 let username = isLoggedIn || isIndia; 
 console.log(result)
  console.log(username)
+ document.write(result)
