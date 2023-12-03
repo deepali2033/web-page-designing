@@ -931,3 +931,12 @@ team1>team2 && console.log('Team 1 is more Likely to win')
 team1<team2 && console.log('Team 2 is more Likely to win')
 
 */
+// Short-circuiting with &&
+let result = false|| someFunction(); // Since the left operand is false, someFunction() is not called.
+
+// Another example
+let isLoggedIn = false;
+let isIndia =true;
+let username = isLoggedIn || isIndia; 
+console.log(result)
+ console.log(username)
