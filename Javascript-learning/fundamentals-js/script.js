@@ -832,7 +832,7 @@ console.log(zip);  // Output: 94105
 */
 
 
-
+/*
 ///////////Spread Operator(...)///////
 const arr=[4,6,9];
 const badNewAee=[1,2,arr[0],arr[1],arr[2]]
@@ -851,3 +851,83 @@ console.log(menu)
 const str='deepali';
 const letters=[...str,'','s.'];
 console.log(letters)
+*/
+///////////section-9(coding Challenge #1)///////////
+/*
+const game = {
+  team1: 'Bayern Munich',
+  team2: 'Borrussia Dortmund',
+  players: [
+    [
+      'Neuer',
+      'Pavard',
+      'Martinez',
+      'Alaba',
+      'Davies',
+      'Kimmich',
+      'Goretzka',
+      'Coman',
+      'Muller',
+      'Gnarby',
+      'Lewandowski',
+    ],
+    [
+      'Burki',
+      'Schulz',
+      'Hummels',
+      'Akanji',
+      'Hakimi',
+      'Weigl',
+      'Witsel',
+      'Hazard',
+      'Brandt',
+      'Sancho',
+      'Gotze',
+    ],
+  ],
+  score: '4:0',
+  scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+  date: 'Nov 9th, 2037',
+  odds: {
+    team1: 11.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
+
+// 1.
+const [playe1,playe2]=game.players;
+document.write(playe1);
+ document.write(playe2)
+ console.log(playe1,playe2)
+
+// 2.
+ const[gk,...fieldPlayer]=playe1;
+ console.log(gk,fieldPlayer)
+
+// 3.
+ const allpalyers=[...playe1,...playe2]
+ console.log(allpalyers)
+
+ // 4.
+ const playersFinal = [...playe1,'Thiago','Coutinho','perisic']
+ console.log(playersFinal)
+
+ // 5.
+ const{odds:{team1,x:drow,team2}}=game;
+ console.log(team1,drow,team2)
+
+ // 6.
+ const printGoals=function(...players){
+  console.log(players)
+  console.log (`${players.length} goals were scored`)
+ }
+ printGoals('Davies','Mulller','Lewandowski','Kimmich')
+ printGoals('Davies','Mulller')
+ printGoals(...game.scored)
+
+// 7.
+team1>team2 && console.log('Team 1 is more Likely to win')
+team1<team2 && console.log('Team 2 is more Likely to win')
+
+*/
