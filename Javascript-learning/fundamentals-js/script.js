@@ -931,6 +931,8 @@ team1>team2 && console.log('Team 1 is more Likely to win')
 team1<team2 && console.log('Team 2 is more Likely to win')
 
 */
+
+/*
 // Short-circuiting with &&
 let result = false|| someFunction(); // Since the left operand is false, someFunction() is not called.
 
@@ -941,3 +943,25 @@ let username = isLoggedIn || isIndia;
 console.log(result)
  console.log(username)
  document.write(result)
+ */
+/*
+//////////object.key ,value and entries////
+const user={
+  firstName:'deepali',
+  lastName:'Tanwar',
+  age: 23,
+  gender:"female",
+
+}
+console.log('Object.keys(user));
+console.log(Object.values(user));
+console.log(Object.entries(user));
+*/
+
+
+///////set///////
+const staff=['waiter','chif','waiter','manger','chef','waiter']
+const staffUnique = new Set(staff);
+console.log(staffUnique);
+console.log(new Set(['waiter','chif','waiter','manger','chef','waiter']).size)
+console.log(new Set('Jonas').size)
