@@ -960,8 +960,15 @@ console.log(Object.entries(user));
 
 
 ///////set///////
+/*
 const staff=['waiter','chif','waiter','manger','chef','waiter']
 const staffUnique = new Set(staff);
 console.log(staffUnique);
 console.log(new Set(['waiter','chif','waiter','manger','chef','waiter']).size)
 console.log(new Set('Jonas').size)
+*/
+
+
+///////////Maps-Fundamentals ///////////
+const rest =new Map();
+console.log(rest.set('name','deepali','age',23,'gender',"female"))
