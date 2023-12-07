@@ -970,5 +970,37 @@ console.log(new Set('Jonas').size)
 
 
 ///////////Maps-Fundamentals ///////////
+/*
 const rest =new Map();
-console.log(rest.set('name','deepali','age',23,'gender',"female"))
+rest.set('name','deepali')
+rest.set('age',23)
+rest.set('job','student')
+console.log(rest.set(3,"siblings"))
+rest.set('categories',['Italian','Pizzeria',"Vegetarian",'Organic'])
+.set('open',11)
+.set('close',23)
+.set(true,'we are open :D')
+.set(false,'we are closed :(');
+console.log(rest.get('name'));
+console.log(rest.get('age'))
+*/
+
+
+
+/////////////challange #3/////////////
+const gameEvents = new Map([
+  [17, '⚽️ GOAL'],
+  [36, '🔁 Substitution'],
+  [47, '⚽️ GOAL'],
+  [61, '🔁 Substitution'],
+  [64, '🔶 Yellow card'],
+  [69, '🔴 Red card'],
+  [70, '🔁 Substitution'],
+  [72, '🔁 Substitution'],
+  [76, '⚽️ GOAL'],
+  [80, '⚽️ GOAL'],
+  [92, '🔶 Yellow card'],
+]);
+
+const events = [...new Set(gameEvents.values())]
+console.log(events)
