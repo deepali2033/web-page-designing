@@ -987,7 +987,7 @@ console.log(rest.get('age'))
 
 
 
-/////////////challange #3/////////////
+/////////////challange #3////////////
 const gameEvents = new Map([
   [17, '⚽️ GOAL'],
   [36, '🔁 Substitution'],
