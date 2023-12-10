@@ -988,6 +988,7 @@ console.log(rest.get('age'))
 
 
 /////////////challange #3////////////
+/*
 const gameEvents = new Map([
   [17, '⚽️ GOAL'],
   [36, '🔁 Substitution'],
@@ -1009,3 +1010,52 @@ console.log(events)
 // 2.
 gameEvents.delete(64)
 console.log(gameEvents)
+
+*/
+
+////////////working with strings(Part-1)//////
+
+const airline='Tap Air Portugal'
+const plane ='A320';
+
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+// fix capitalization in name
+const passenger = 'deePAli';
+const passengerLower=passenger.toLowerCase();
+const passengerCorrect =passengerLower[0].toUpperCase()+passengerLower.slice(1)
+console.log(passengerCorrect)
+
+/*
+console.log(plane[0]);
+console.log(plane[1])
+console.log(plane[2])
+
+console.log(airline.indexOf('r'));
+console.log(airline.length);
+
+console.log(airline.lastIndexOf('r'))
+console.log(airline.indexOf('Portugals'))
+
+console.log(airline.slice(4,10))
+
+console.log(airline.slice(0,airline.indexOf(' ')))
+console.log(airline.slice(airline.lastIndexOf(' ')+ 1))
+console.log(airline.slice(-2))
+console.log(airline.slice(1,-1))
+
+const checkMiddleSeat= function(seat){
+  const s = seat.slice(-1);
+  if ( s==="B" || s=="E")console.log('you got the middle seat');
+  else console.log('you got lucky')
+}
+checkMiddleSeat('11B')
+checkMiddleSeat('33C')
+checkMiddleSeat('9E')
+
+console.log(new String('jonas'))
+console.log(typeof new String('jonas'))
+console.log(typeof new String('jonas').slice(1))
+
+*/
+////////////working with strings(Part-2)//////
