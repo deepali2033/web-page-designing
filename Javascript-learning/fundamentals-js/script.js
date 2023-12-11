@@ -1013,8 +1013,8 @@ console.log(gameEvents)
 
 */
 
-////////////working with strings(Part-1)/////
-
+////////////working with strings/////
+/*
 const airline='Tap Air Portugal'
 const plane ='A320';
 
@@ -1043,7 +1043,7 @@ console.log(priceUS);
  const annoucement='All passenger come to boaring door 23, Boarding door 23!'
  console.log(annoucement.replace(/door/g,'gate'))
 // console.log(annoucement.replaceAll('door','gate'))
-
+*/
 /*
 console.log(plane[0]);
 console.log(plane[1])
@@ -1076,4 +1076,4 @@ console.log(typeof new String('jonas'))
 console.log(typeof new String('jonas').slice(1))
 
 */
-////////////working with strings(Part-2)//////
+console.log('a+vary+nice+strng'.split('+'))
