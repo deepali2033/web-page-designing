@@ -1026,6 +1026,24 @@ const passengerLower=passenger.toLowerCase();
 const passengerCorrect =passengerLower[0].toUpperCase()+passengerLower.slice(1)
 console.log(passengerCorrect)
 
+
+// comparing email
+const email= 'hello@deepali.io'
+const  loginEmail= ' HellO@Deepali.Io \n';
+const lowerEmail=loginEmail.toLocaleLowerCase().trim();
+console.log(lowerEmail)
+   // const trimEmail=lowerEmail.trim()
+   // console.log(trimEmail)
+console.log(email===lowerEmail)
+
+// replacing
+const priceGB = '224,44&'
+const priceUS = priceGB.replace('&',"$").replace(',','.')
+console.log(priceUS);
+ const annoucement='All passenger come to boaring door 23, Boarding door 23!'
+
+console.log(annoucement.replaceAll('door','gate'))
+
 /*
 console.log(plane[0]);
 console.log(plane[1])
