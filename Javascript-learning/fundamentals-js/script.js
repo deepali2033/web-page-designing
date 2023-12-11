@@ -1041,8 +1041,8 @@ const priceGB = '224,44&'
 const priceUS = priceGB.replace('&',"$").replace(',','.')
 console.log(priceUS);
  const annoucement='All passenger come to boaring door 23, Boarding door 23!'
-
-console.log(annoucement.replaceAll('door','gate'))
+ console.log(annoucement.replace(/door/g,'gate'))
+// console.log(annoucement.replaceAll('door','gate'))
 
 /*
 console.log(plane[0]);
