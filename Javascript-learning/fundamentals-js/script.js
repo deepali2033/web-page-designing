@@ -1013,7 +1013,7 @@ console.log(gameEvents)
 
 */
 
-////////////working with strings/////
+////////////working with strings////////
 /*
 const airline='Tap Air Portugal'
 const plane ='A320';
