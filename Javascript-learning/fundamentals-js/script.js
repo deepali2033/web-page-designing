@@ -1082,3 +1082,26 @@ const[ firstName ,lastName,age]='deepali tanwar 23'.split(' ');
 console.log(age,firstName)
 const newName = ['miss.',firstName,lastName.toUpperCase()].join(' ')
 document.write(newName)
+
+// Padding 
+const message ='Go to gate 23!';
+console.log(message.padStart(20,'+').padEnd(35,'+'))
+console.log('Deepali'.padStart(20,'+').padEnd(30,"+"))
+ const maskCreditCard = function(number){
+  const str =number +'';
+  const last =str.slice(-4);
+  return last.padStart(str.length,"*")
+ }
+console.log(maskCreditCard(2362327624231))
+console.log(873592136499818)
+console.log(maskCreditCard('12554623442337917499'))
+
+
+//Repeat
+const message2= 'Bad weather.... All Departues Delayed... ';
+console.log(message2.repeat(5));
+const plannesInline = function(n){
+  console.log(`There  are ${n} planes in line ${'⚽️'}`)
+}
+plannesInline(5)
+pl
