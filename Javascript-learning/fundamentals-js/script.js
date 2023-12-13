@@ -1076,6 +1076,7 @@ console.log(typeof new String('jonas'))
 console.log(typeof new String('jonas').slice(1))
 
 */
+/*
 console.log('a+vary+nice+strng'.split('+'));
 console.log('deepali tanwar 23'.split(' '))
 const[ firstName ,lastName,age]='deepali tanwar 23'.split(' ');
@@ -1116,3 +1117,4 @@ const plannesInline = function(n){
 }
 plannesInline(6)
 plannesInline(9)
+*/
