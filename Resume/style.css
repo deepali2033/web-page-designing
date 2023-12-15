@@ -9,6 +9,12 @@ body{
 .k-img{
   width: 2.5rem;
 }
-.span{
-  color: rgb(123, 198, 244);
+span{
+  color: rgb(81, 236, 194);
+}
+h1{
+  color: rgb(208, 206, 206);
+}
+h3{
+  color:rgb(124, 123, 123)
 }
