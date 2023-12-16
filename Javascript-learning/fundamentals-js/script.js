@@ -1172,6 +1172,8 @@ for(const [i, row] of rows.entries()){
 });
 
 */
+
+
 const flights =
   `_Delayed_Departure;fao93766109;txl2133758440;11:25
   +_Arrival;bru0943384722;fao93766109;11:45
@@ -1179,7 +1181,8 @@ const flights =
   +_Departure;fao93766109;lis2323639855;12:30`;
 console.log(flights.split('+'))
 for (const flight of flights.split('+')){
-  const [type ,form, to,time]=flight.split(';');
+  const [type ,from, to,time]=flight.split(';');
 const output=`${type} ${from} ${to} (${time})`
-  console.log(flight.split(';'))
+  // console.log(flight.split(';'))
+console.log(output)
 }
