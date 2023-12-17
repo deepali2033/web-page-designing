@@ -1172,7 +1172,7 @@ for(const [i, row] of rows.entries()){
 });
 
 */
-/*
+
 
 const flights =
   `_Delayed_Departure;fao93766109;txl2133758440;11:25
@@ -1182,7 +1182,7 @@ const flights =
 console.log(flights.split('+'))
 for (const flight of flights.split('+')){
   const [type ,from, to,time]=flight.split(';');
-const output=`${type} ${from} ${to} (${time})`
+const output=`${type.startsWith('Delayed') ?}${type.replaceAll('_',' ')} ${from} ${to} (${time.replace(":",'h')})`
   // console.log(flight.split(';'))
 console.log(output)
 }
