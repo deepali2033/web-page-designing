@@ -1180,9 +1180,11 @@ const flights =
   +_Delayed_Arrival;hel7439299980;fao93766109;12:05
   +_Departure;fao93766109;lis2323639855;12:30`;
 console.log(flights.split('+'))
+const getCode =str => str.slice(0,3).toUpperCase();
 for (const flight of flights.split('+')){
   const [type ,from, to,time]=flight.split(';');
-const output=`${type.startsWith('Delayed') ?'🔴':' '} ${type.replaceAll('_',' ')} ${from} ${to} (${time.replace(":",'h')})`
+const output=`${type.startsWith('_Delayed') ?'🔴':' '} ${type.replaceAll('_',' ')} from ${getCode(from)}  to ${getCode(to)}  (${time.replace(":",'h')})`
   // console.log(flight.split(';'))
 console.log(output)
+
 }
