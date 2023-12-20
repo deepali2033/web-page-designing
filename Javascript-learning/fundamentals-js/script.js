@@ -1188,3 +1188,43 @@ const output=`${type.startsWith('_Delayed') ?'🔴':''}${type.replaceAll('_',' '
 console.log(output)
 }
 */
+
+///////////Defaufalt parameters/////////
+/*
+const booking=[]
+const createBooking = function(flightNum,numPassengers=2,price=220*numPassengers){
+  const bookings={
+    flightNum,
+    numPassengers,
+    price,
+  }
+  console.log(bookings)
+  booking.push(bookings)
+}
+createBooking('AH203')
+*/
+
+
+const flight='LH243';
+const jonas={
+  name:'Jonas Schmedtmann',
+  passport:23689757667
+}
+const checkIn =function (flightNum,passenger){
+flightNum='LH334';
+
+}
+passenger.name='Mr.'+passenger.name;
+if(passenger.passport===2368975767){
+ 
+  alert('Checked in')
+}
+else{
+  alert('Wrong passport!')
+}
+
+
+checkIn(flight,jonas)
+console.log(flight,jonas)
+
+
