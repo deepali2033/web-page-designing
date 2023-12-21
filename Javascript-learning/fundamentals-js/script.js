@@ -1205,26 +1205,42 @@ createBooking('AH203')
 */
 
 
-const flight='LH243';
-const jonas={
-  name:'Jonas Schmedtmann',
-  passport:23689757667
-}
-const checkIn =function (flightNum,passenger){
-flightNum='LH334';
+// const flight='LH243';
+// const jonas={
+//   name:'Jonas Schmedtmann',
+//   passport:23689757667
+// }
+// const checkIn =function (flightNum,passenger){
+// flightNum='LH334';
 
-}
-passenger.name='Mr.'+passenger.name;
-if(passenger.passport===2368975767){
+// }
+// passenger.name='Mr.'+passenger.name;
+// if(passenger.passport===2368975767){
  
-  alert('Checked in')
+//   alert('Checked in')
+// }
+// else{
+//   alert('Wrong passport!')
+// }
+
+
+// checkIn(flight,jonas)
+// console.log(flight,jonas)
+
+// function callbackFunction(){
+//   console.log('I am  a callback function');
+// }
+
+///////////////higher order function///////////
+// // Callback function, passed as a parameter in the higher order function
+function callbackFunction(){
+  console.log('I am  a callback function');
 }
-else{
-  alert('Wrong passport!')
+
+// higher order function
+function higherOrderFunction(func){
+  console.log('I am higher order function')
+  func()
 }
 
-
-checkIn(flight,jonas)
-console.log(flight,jonas)
-
-
+higherOrderFunction(callbackFunction)
