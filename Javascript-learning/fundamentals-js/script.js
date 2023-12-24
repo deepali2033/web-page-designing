@@ -1233,6 +1233,7 @@ createBooking('AH203')
 
 ///////////////higher order function///////////
 // // Callback function, passed as a parameter in the higher order function
+/*
 function callbackFunction(){
   console.log('I am  a callback function');
 }
@@ -1243,4 +1244,19 @@ function higherOrderFunction(func){
   func()
 }
 
-higherOrderFunction(callbackFunction)
+higherOrderFunction(callbackFunction)*/
+/*
+const greet =function(greeting){
+  return function (name){
+    console.log(`${greeting} ${name} `)
+  }
+}
+const greetingHey= greet('Hey') 
+greetingHey('Deeopali') 
+greetingHey('Rashi')
+
+greet('Hello')('Anjali')
+*/
+// challenge 
+const greetArr= greeting => name => console.log(`${greeting} ${name} what's up!`)
+greetArr('Hii')('Krishhh');
