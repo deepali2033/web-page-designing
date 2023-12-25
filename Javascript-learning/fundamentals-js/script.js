@@ -1258,5 +1258,6 @@ greetingHey('Rashi')
 greet('Hello')('Anjali')
 */
 // challenge 
+
 const greetArr= greeting => name => console.log(`${greeting} ${name} what's up!`)
 greetArr('Hii')('Krishhh');
