@@ -1285,4 +1285,7 @@ function whhoAmI(){
 var job ='Full Stack'
 console.log('I am a'+job)
 }
-whhoAmI();
+
+// whhoAmI.letshavefun='Allrihjt ';
+console.log(whhoAmI.letshavefun)
+whhoAmI()
