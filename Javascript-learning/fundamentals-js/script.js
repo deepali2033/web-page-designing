@@ -1258,6 +1258,31 @@ greetingHey('Rashi')
 greet('Hello')('Anjali')
 */
 // challenge 
-var x;
-const greetArr= greeting => name => console.log(`${greeting} ${name} what's up!`)
-greetArr('Hii')('Krishhh');
+// const greetArr= greeting => name => console.log(`${greeting} ${name} what's up!`)
+// greetArr('Hii')('Krishhh');
+/*
+const lufthansa = {
+  airLine:'Lufthansa',
+  iataCode:'LH',
+  booking:[],
+  book(flightNum,name){
+   console.log(
+        `${name} booked a seat on ${this.airLine} flight ${this.iataCode} ${flightNum}`
+      )
+      this.booking.push({flight:`${this.iataCode}${flightNum}`,name})
+    }
+}
+  lufthansa.book(234,'deepali')
+  console.log(lufthansa)
+*/
+console.log(`I am a ${job}`)
+var job ='Web Develper'
+var company='TCS'
+console.log(`I am a ${job}`)
+
+function whhoAmI(){
+  console.log('I am a '+ job +' in '+company);
+var job ='Full Stack'
+console.log('I am a'+job)
+}
+whhoAmI();
