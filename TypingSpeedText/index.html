@@ -17,13 +17,39 @@
     <div class="maindiv">
         <div class="child">
             <h1 class="heading">Welcome To Typing Speed Test</h1>
-            <h2 class="msg"></h2>
+            <h2 id="msg"></h2>
             <br>
-            <textarea class="text" placeholder="Check speed......start typing here" cols="100px" rows =10px></textarea>
+            <textarea id="myWords" class="text" placeholder="Check speed......start typing here" cols="100px" rows =10px></textarea>
             <br>
-            <button class="mainbtn" >Start</button>
+            <button id="btn" class="mainbtn" >Start</button>
         </div>
     </div>
+    <script>
+        const setOfWords=[" Hello Guy's My name is Deepali Tanwar and I am a ........","Hope you are having fun this is a simple game you can make","If you want the source code then link is given in the below ","so you can create your own version of this challenge."]
+const msg=document.getElementById('msg');
+const typeWords= document.getElementById('myWords');
+const btn=document.getElementById('btn');
+let startTime,endTime;
+const playGame=()=>{
+    let randomNumber=Math.floor(Math.random()*setOfWords.length);
+    msg.innerText=setOfWords[randomNumber]
+    let date =new Date();
+    startTime=Date.getTime();
+    btn.innerText='Done'
+}
+const  endPlay=()=>{
     
+}
+btn.addEventListener('click', function(){
+    if (this.innerText=='Start'){
+        typeWords.disabled= false;
+        playGame();
+    }
+    else if (this.innerText =="Dane"){
+        typeWords.disabled=true;
+
+    }
+})
+    </script>
 </body>
 </html>
