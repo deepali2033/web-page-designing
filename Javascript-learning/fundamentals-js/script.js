@@ -1275,6 +1275,7 @@ const lufthansa = {
   lufthansa.book(234,'deepali')
   console.log(lufthansa)
 */
+/*
 console.log(`I am a ${job}`)
 var job ='Web Develper'
 var company='TCS'
@@ -1289,3 +1290,16 @@ console.log('I am a'+job)
 // whhoAmI.letshavefun='Allrihjt ';
 console.log(whhoAmI.letshavefun)
 whhoAmI()
+*/
+const outerFun=(a)=>{
+  let b=10;
+  const innerFun=()=>{
+    let sum=a+b;
+    console.log(`sum of two number is ${sum}`)
+  }
+ return innerFun;
+  
+}
+// let inner=outerFun(6)
+// inner()
+outerFun(8)();
