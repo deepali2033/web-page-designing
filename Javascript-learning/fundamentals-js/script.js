@@ -1307,15 +1307,25 @@ outerFun(8)();*/
 
 
 /////////ForEach loop//////////
-const myProg=['PHP','Python','Java','c++','c','Javascript']
- myProg.forEach(function(currValue,index ,array){
-  console.log(` ${index} --- ${currValue} =${array}`)
- })
+// const myProg=['PHP','Python','Java','c++','c','Javascript']
+//  myProg.forEach(function(currValue,index ,array){
+//   console.log(` ${index} --- ${currValue} =${array}`)
+//  })
 
 
- const arrNum=[22,13,44,56,9,3]
+//  const arrNum=[22,13,44,56,9,3]
 
-arrNum.forEach(function(currValue ,index,arrNum){
-  // console.log(currValue+100)
-  console.log(arrNum[index]+100)
-})
+// arrNum.forEach(function(currValue ,index,arrNum){
+//   // console.log(currValue+100)
+//   console.log(arrNum[index]+100)
+// })
+
+const obj = { a: 1, b: 2, c: 3 };
+const fun=function(){
+for (let key in obj) {
+  console.log(key, obj[key]);
+  var num=5
+}
+console.log(num)}
+
+fun();
