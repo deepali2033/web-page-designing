@@ -1319,7 +1319,7 @@ outerFun(8)();*/
 //   // console.log(currValue+100)
 //   console.log(arrNum[index]+100)
 // })
-
+/*
 const obj = { a: 1, b: 2, c: 3 };
 const fun=function(){
 for (let key in obj) {
@@ -1328,4 +1328,15 @@ for (let key in obj) {
 }
 console.log(num)}
 
-fun();
+fun();*/
+
+//////////////Rest Parameter///////////
+/*
+function fun(a,b,...c){
+  console.log(`${a} ${b}`);
+  console.log(c);
+  console.log(c[0]);
+  console.log(c.length);
+  console.log(c.indexOf('Edan'))
+}
+fun('Ronaldo','Neymar','Pele','Messi','Edan','Deepali')*/
