@@ -1351,6 +1351,7 @@ function fun(a,b,...c){
 fun('Ronaldo','Neymar','Pele','Messi','Edan','Deepali')*/
 
 //////////simple array method//////
+/*
 let arr=['a','b','c','d','f']
 
 // SLICE
@@ -1379,4 +1380,4 @@ console.log([...arr, ...arr2]);
 
 // JOIN
 console.log(letters.join(' - '));
-console.log(letters)
+console.log(letters)*/
