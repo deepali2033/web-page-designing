@@ -1380,4 +1380,4 @@ console.log([...arr, ...arr2]);
 
 // JOIN
 console.log(letters.join(' - '));
-console.log(letters)*/
+console.log(letters)
