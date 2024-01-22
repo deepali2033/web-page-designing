@@ -1382,4 +1382,4 @@ console.log([...arr, ...arr2]);
 console.log(letters.join(' - '));
 console.log(letters)*/
 
-console.log(1+ -"1"+"2")
+console.log(1+ -"1")
