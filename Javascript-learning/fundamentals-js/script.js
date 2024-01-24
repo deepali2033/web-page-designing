@@ -700,8 +700,7 @@ function calcAge(birthYear){
   return age;
 }
 */
-'use strict';
-
+("use strict");
 
 /*
 ////////////Destructuring Arrey//////////
@@ -831,7 +830,6 @@ console.log(city);  // Output: San Francisco
 console.log(zip);  // Output: 94105
 */
 
-
 /*
 ///////////Spread Operator(...)///////
 const arr=[4,6,9];
@@ -958,7 +956,6 @@ console.log(Object.values(user));
 console.log(Object.entries(user));
 */
 
-
 ///////set///////
 /*
 const staff=['waiter','chif','waiter','manger','chef','waiter']
@@ -967,7 +964,6 @@ console.log(staffUnique);
 console.log(new Set(['waiter','chif','waiter','manger','chef','waiter']).size)
 console.log(new Set('Jonas').size)
 */
-
 
 ///////////Maps-Fundamentals ///////////
 /*
@@ -984,8 +980,6 @@ rest.set('categories',['Italian','Pizzeria',"Vegetarian",'Organic'])
 console.log(rest.get('name'));
 console.log(rest.get('age'))
 */
-
-
 
 /////////////challange #3////////////
 /*
@@ -1119,7 +1113,6 @@ plannesInline(6)
 plannesInline(9)
 */
 
-
 // Coding Challenge #4
 
 /* 
@@ -1204,7 +1197,6 @@ const createBooking = function(flightNum,numPassengers=2,price=220*numPassengers
 createBooking('AH203')
 */
 
-
 // const flight='LH243';
 // const jonas={
 //   name:'Jonas Schmedtmann',
@@ -1216,13 +1208,12 @@ createBooking('AH203')
 // }
 // passenger.name='Mr.'+passenger.name;
 // if(passenger.passport===2368975767){
- 
+
 //   alert('Checked in')
 // }
 // else{
 //   alert('Wrong passport!')
 // }
-
 
 // checkIn(flight,jonas)
 // console.log(flight,jonas)
@@ -1257,7 +1248,7 @@ greetingHey('Rashi')
 
 greet('Hello')('Anjali')
 */
-// challenge 
+// challenge
 // const greetArr= greeting => name => console.log(`${greeting} ${name} what's up!`)
 // greetArr('Hii')('Krishhh');
 /*
@@ -1305,13 +1296,11 @@ const outerFun=(a)=>{
 // inner()
 outerFun(8)();*/
 
-
 /////////ForEach loop//////////
 // const myProg=['PHP','Python','Java','c++','c','Javascript']
 //  myProg.forEach(function(currValue,index ,array){
 //   console.log(` ${index} --- ${currValue} =${array}`)
 //  })
-
 
 //  const arrNum=[22,13,44,56,9,3]
 
@@ -1320,14 +1309,13 @@ outerFun(8)();*/
 //   console.log(arrNum[index]+100)
 // })
 
-
-const movements =[22,45,-345,88,-97,87,-556,-55]
+const movements = [22, 45, -345, 88, -97, 87, -556, -55];
 for (const movement of movements)
-if (movement>0){
-  console.log(`You deposited ${movement}`)
-} else{
-  console.log(`You windrew ${Math.abs(movement)}`)
-}
+  if (movement > 0) {
+    console.log(`You deposited ${movement}`);
+  } else {
+    console.log(`You windrew ${Math.abs(movement)}`);
+  }
 /*
 const obj = { a: 1, b: 2, c: 3 };
 const fun=function(){
@@ -1382,4 +1370,4 @@ console.log([...arr, ...arr2]);
 console.log(letters.join(' - '));
 console.log(letters)*/
 
-console.log(1-"1"+ -"4"+'namste')
+console.log(1 + -"1" + -"4" + "namste");
