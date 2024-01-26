@@ -1371,3 +1371,22 @@ console.log(letters.join(' - '));
 console.log(letters)*/
 
 console.log(1 + -"1" + -"4" + "namste");
+/////////////section-11 challange-1/////////
+const checkDogs = function (dogsJulia, dogsKate) {
+  const dogsJuliaCorrected = dogsJulia.slice();
+
+  dogsJuliaCorrected.splice(0, 1);
+  dogsJuliaCorrected.splice(-2);
+  const dogs = dogsJuliaCorrected.concat(dogsKate);
+  console.log(dogs);
+
+  dogs.forEach(function (dog, i) {
+    if (dog >= 3) {
+      console.log(`Dog number ${i + 1} is an adult, and is 5 years old`);
+    } else {
+      console.log(`Dog number ${i + 1} is still a puppy`);
+    }
+  });
+};
+
+checkDogs([3, 4, 6, 8, 23], [1, 6, 12, 4, 6, 8]);
