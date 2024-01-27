@@ -109,15 +109,14 @@ const displayMovements = function (movements) {
 };
 displayMovements(account1.movements);
 
-const movements = [200, 450, -400, 3000, -650, -78, 70, 556];
-const eurToUSD = 1.1;
-const movementsUSD = movements.map((mov) => mov * eurToUSD);
-console.log(movements);
-console.log(movementsUSD);
-
-const movementsDescriptions = movements.map(
-  (mov, i) =>
-    `Movement ${i + 1}:You${mov > 0 ? "deposited" : "withdrew"} ${Math.abs(
-      mov
-    )}`
-);
+const createUserNames = function (accs) {
+  accs.forEach(function (acc) {
+    acc.userName = acc.owner
+      .toLowerCase()
+      .split(" ")
+      .map((name) => name[0])
+      .join("");
+  });
+};
+createUserNames(accounts);
+console.log(accounts);
