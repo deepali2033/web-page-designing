@@ -108,7 +108,11 @@ const displayMovements = function (movements) {
   });
 };
 displayMovements(account1.movements);
-
+const calcDisplayBalance = function (movements) {
+  const balance = movements.reduce((acc, cur) => acc + cur, 0);
+  labelBalance.textContent = `${balance} EUR`;
+};
+calcDisplayBalance(account1.movements);
 const createUserNames = function (accs) {
   accs.forEach(function (acc) {
     acc.userName = acc.owner
@@ -120,3 +124,13 @@ const createUserNames = function (accs) {
 };
 createUserNames(accounts);
 console.log(accounts);
+const movements = [200, 450, -400, 3000, -456, -130, 70, 1300];
+const deposits = movements.filter(function (mov) {
+  return mov > 0;
+});
+const withdrew = movements.filter((mov) => mov < 0);
+console.log(deposits);
+console.log(withdrew);
+
+const balance = movements.reduce((acc, cur) => acc + cur, 0);
+console.log(balance);
