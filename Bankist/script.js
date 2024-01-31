@@ -144,6 +144,7 @@ const createUserNames = function (accs) {
 };
 createUserNames(accounts);
 console.log(accounts);
+
 ////////////////////////////////////
 const movements = [200, 450, -400, 300, -456, -130, 70, 1300];
 const deposits = movements.filter(function (mov) {
@@ -163,3 +164,7 @@ const depositeUS = movements
   .map((mov) => mov * eruotoUS)
   .reduce((acc, mov) => acc + mov, 0);
 console.log(depositeUS);
+const firstWithdrawal = movements.find((mov) => mov < 0);
+console.log(firstWithdrawal);
+const account = accounts.find((acc) => acc.owner === "Jessica Davis");
+console.log(account);

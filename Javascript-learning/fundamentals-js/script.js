@@ -1412,3 +1412,4 @@ const calcAvergeageHumanAge = function (ages) {
 };
 calcAvergeageHumanAge([5, 2, 4, 9, 12, 19, 8]);
 */
+///////find///////
