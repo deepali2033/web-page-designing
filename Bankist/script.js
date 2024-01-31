@@ -113,6 +113,26 @@ const calcDisplayBalance = function (movements) {
   labelBalance.textContent = `${balance} EUR`;
 };
 calcDisplayBalance(account1.movements);
+const calcDisplaySummary = function (movements) {
+  const incomes = movements
+    .filter((mov) => mov > 0)
+    .reduce((acc, mov) => acc + mov, 0);
+  const out = movements
+    .filter((mov) => mov < 0)
+    .reduce((acc, mov) => acc + mov, 0);
+  const intrest = movements
+    .filter((mov) => mov > 0)
+    .map((deposit) => (deposit * 1.2) / 100)
+    .filter((int, i, arr) => {
+      console.log(arr);
+      return int >= 1;
+    })
+    .reduce((acc, int) => acc + int, 0);
+  labelSumIn.textContent = `${incomes}`;
+  labelSumOut.textContent = `${Math.abs(out)}`;
+  labelSumInterest.textContent = `${intrest}`;
+};
+calcDisplaySummary(account1.movements);
 const createUserNames = function (accs) {
   accs.forEach(function (acc) {
     acc.userName = acc.owner
@@ -124,6 +144,7 @@ const createUserNames = function (accs) {
 };
 createUserNames(accounts);
 console.log(accounts);
+////////////////////////////////////
 const movements = [200, 450, -400, 300, -456, -130, 70, 1300];
 const deposits = movements.filter(function (mov) {
   return mov > 0;
@@ -136,3 +157,9 @@ const balance = movements.reduce((acc, cur) => acc + cur);
 console.log(balance);
 const max = movements.reduce((acc, cur) => (acc < cur ? cur : acc));
 console.log(max);
+const eruotoUS = 1.1;
+const depositeUS = movements
+  .filter((mov) => mov > 0)
+  .map((mov) => mov * eruotoUS)
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(depositeUS);
