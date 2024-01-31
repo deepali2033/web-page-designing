@@ -124,7 +124,7 @@ const createUserNames = function (accs) {
 };
 createUserNames(accounts);
 console.log(accounts);
-const movements = [200, 450, -400, 3000, -456, -130, 70, 1300];
+const movements = [200, 450, -400, 300, -456, -130, 70, 1300];
 const deposits = movements.filter(function (mov) {
   return mov > 0;
 });
@@ -132,5 +132,7 @@ const withdrew = movements.filter((mov) => mov < 0);
 console.log(deposits);
 console.log(withdrew);
 
-const balance = movements.reduce((acc, cur) => acc + cur, 0);
+const balance = movements.reduce((acc, cur) => acc + cur);
 console.log(balance);
+const max = movements.reduce((acc, cur) => (acc < cur ? cur : acc));
+console.log(max);

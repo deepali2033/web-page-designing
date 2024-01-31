@@ -1390,3 +1390,7 @@ const checkDogs = function (dogsJulia, dogsKate) {
 };
 
 checkDogs([3, 4, 6, 8, 23], [1, 6, 12, 4, 6, 8]);
+/////////////section-11 chll-2////////
+//map, filter,reduse
+
+const calcAvergeageHumanAge = function (ages) {};
