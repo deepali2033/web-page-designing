@@ -1370,9 +1370,9 @@ console.log([...arr, ...arr2]);
 console.log(letters.join(' - '));
 console.log(letters)*/
 
-console.log(1 + -"1" + -"4" + "namste");
+//console.log(1 + -"1" + -"4" + "namste");
 /////////////section-11 challange-1/////////
-const checkDogs = function (dogsJulia, dogsKate) {
+/*const checkDogs = function (dogsJulia, dogsKate) {
   const dogsJuliaCorrected = dogsJulia.slice();
 
   dogsJuliaCorrected.splice(0, 1);
@@ -1390,7 +1390,16 @@ const checkDogs = function (dogsJulia, dogsKate) {
 };
 
 checkDogs([3, 4, 6, 8, 23], [1, 6, 12, 4, 6, 8]);
+*/
 /////////////section-11 chll-2////////
 //map, filter,reduse
 
-const calcAvergeageHumanAge = function (ages) {};
+const calcAvergeageHumanAge = function (ages) {
+  const humantAges = ages.map((age) => (2 ? 2 * age : 16 * age * 4));
+  console.log(humantAges);
+  const adult = humantAges.filter((age) => age >= 18);
+  console.log(adult);
+  const average = adult.reduce((acc, ages) => acc + ages, 0) / adult.length;
+  console.log(average);
+};
+calcAvergeageHumanAge([5, 2, 4, 9, 12, 19, 8]);
