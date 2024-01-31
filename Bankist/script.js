@@ -144,6 +144,17 @@ const createUserNames = function (accs) {
 };
 createUserNames(accounts);
 console.log(accounts);
+let currentAccount;
+btnLogin.addEventListener("click", function (e) {
+  e.preventDefault();
+  currentAccount = accounts.find(
+    (acc) => acc.userName === inputLoginUsername.value
+  );
+  console.log(currentAccount);
+  if (currentAccount && currentAccount.pin === Number(inputClosePin.value)) {
+    console.log;
+  }
+});
 
 ////////////////////////////////////
 const movements = [200, 450, -400, 300, -456, -130, 70, 1300];
