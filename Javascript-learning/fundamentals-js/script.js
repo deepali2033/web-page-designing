@@ -1393,13 +1393,22 @@ checkDogs([3, 4, 6, 8, 23], [1, 6, 12, 4, 6, 8]);
 */
 /////////////section-11 chll-2////////
 //map, filter,reduse
-
+/*
 const calcAvergeageHumanAge = function (ages) {
-  const humantAges = ages.map((age) => (2 ? 2 * age : 16 * age * 4));
-  console.log(humantAges);
-  const adult = humantAges.filter((age) => age >= 18);
-  console.log(adult);
-  const average = adult.reduce((acc, ages) => acc + ages, 0) / adult.length;
+  // const humantAges = ages.map((age) => (2 ? 2 * age : 16 * age * 4));
+  // console.log(humantAges);
+  // const adult = humantAges.filter((age) => age >= 18);
+  // console.log(adult);
+  // const averages = adult.reduce((acc, ages) => acc + ages, 0) / adult.length;
+  // console.log(averages);
+
+  ///////chaining method//////
+  const average =
+    ages
+      .map((age) => (2 ? 2 * age : 16 * age * 4))
+      .filter((age) => age >= 18)
+      .reduce((acc, ages) => acc + ages, 0) / adult.length;
   console.log(average);
 };
 calcAvergeageHumanAge([5, 2, 4, 9, 12, 19, 8]);
+*/
