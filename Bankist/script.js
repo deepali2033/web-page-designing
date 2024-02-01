@@ -152,7 +152,7 @@ btnLogin.addEventListener("click", function (e) {
   );
   console.log(currentAccount);
   if (currentAccount && currentAccount.pin === Number(inputClosePin.value)) {
-    console.log;
+    console.log(currentAccount);
   }
 });
 
