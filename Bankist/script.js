@@ -152,9 +152,10 @@ btnLogin.addEventListener("click", function (e) {
   );
   console.log(currentAccount);
   if (currentAccount && currentAccount.pin === Number(inputClosePin.value)) {
-    console.log(currentAccount);
-  }
-});
+//   Displsy UI and message
+labelWelcome.textContent=`Welcom back, ${currentAccount.owner.split(' ')[0]}`
+containerApp.style
+};
 
 ////////////////////////////////////
 const movements = [200, 450, -400, 300, -456, -130, 70, 1300];
