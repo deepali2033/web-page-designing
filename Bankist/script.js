@@ -152,12 +152,24 @@ btnLogin.addEventListener("click", function (e) {
   );
   console.log(currentAccount);
   if (currentAccount && currentAccount.pin === Number(inputClosePin.value)) {
-//   Displsy UI and message
-labelWelcome.textContent=`Welcom back, ${currentAccount.owner.split(' ')[0]}`
-containerApp.style
-};
+    //   Displsy UI and message
+    labelWelcome.textContent = `Welcom back, ${
+      currentAccount.owner.split(" ")[0]
+    }`;
+    containerApp.style.opacity = 100;
+    console.log(labelWelcome);
+    // containerApp.style.opacity = 100;
+    // // Display movements
+    // displayMovements(currentAccount.movements);
+    // // Display balance
+    // calcDisplayBalance(currentAccount.movements);
+    // // Display summary
+    // calcDisplaySummary(currentAccount.movements);
+  }
+});
 
 ////////////////////////////////////
+/*
 const movements = [200, 450, -400, 300, -456, -130, 70, 1300];
 const deposits = movements.filter(function (mov) {
   return mov > 0;
@@ -179,4 +191,5 @@ console.log(depositeUS);
 const firstWithdrawal = movements.find((mov) => mov < 0);
 console.log(firstWithdrawal);
 const account = accounts.find((acc) => acc.owner === "Jessica Davis");
-console.log(account);
+console.log(account);}
+*/
