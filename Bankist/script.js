@@ -234,7 +234,7 @@ btnClose.addEventListener("click", function (e) {
 
   inputCloseUsername.value = inputClosePin.value = "";
 });
-
+console.log(account1.movements);
 ////////////////////////////////////
 /*
 const movements = [200, 450, -400, 300, -456, -130, 70, 1300];
