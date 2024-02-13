@@ -2,7 +2,7 @@
 let score = 20;
 let highscore = 0;
 const secretNumber = Math.trunc(Math.random() * 20 + 1);
-document.querySelector(".number").textContent = secretNumber;
+// document.querySelector(".number").textContent = secretNumber;
 const writeMessage = function (message) {
   document.querySelector(".message").textContent = message;
 };
