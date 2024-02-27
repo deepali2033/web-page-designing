@@ -12,7 +12,7 @@ document.querySelector(".check").addEventListener("click", function () {
   console.log("aaa", guess, secretNumber);
   if (!guess) {
     writeMessage("No Number!");
-    // /document.querySelector(".message").textContent = "No number";
+    //document.querySelector(".message").textContent = "No number";
   } else if (guess === secretNumber) {
     // document.querySelector(".message").textContent = "Correct Number ";
     writeMessage("🥳 Correct Number!");
