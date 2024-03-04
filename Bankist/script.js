@@ -278,3 +278,23 @@ console.log(firstWithdrawal);
 const account = accounts.find((acc) => acc.owner === "Jessica Davis");
 console.log(account);}
 */
+///////// Flat mathod using arrey////////
+const arr = [[1, 2, 3], [4, 5, 6], 7, 8, 9];
+console.log(arr.flat());
+const arrDeep = [[[1, 2], 3], [4, [5, 6]], 7, 8, 9];
+console.log(arrDeep.flat(2));
+// const accountMovements = accounts.map((acc) => acc.movements).flat().reduce((acc, mov) => acc + mov, 0);
+// console.log(accountMovements);
+// const allMovements = accountMovements.flat();
+// console.log(allMovements);
+// const overalBalnce = allMovements.reduce((acc, mov) => acc + mov, 0);
+const overalBalnce = accounts
+  .map((acc) => acc.movements)
+  .flat()
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(overalBalnce);
+/////flatMap///
+const overalBalnce2 = accounts
+  .flatMap((acc) => acc.movements)
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(overalBalnce2);
