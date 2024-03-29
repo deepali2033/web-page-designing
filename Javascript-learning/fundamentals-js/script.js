@@ -1416,7 +1416,7 @@ calcAvergeageHumanAge([5, 2, 4, 9, 12, 19, 8]);
 var map = function (arr, fn) {
   let transformation = [];
   for (let i = 0; i < arr.length; i++) {
-    // Corrected initialization of i to 0
+    //// Corrected initialization of i to 0
     transformation.push(fn(arr[i], i));
   }
 
