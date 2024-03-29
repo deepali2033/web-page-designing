@@ -1308,14 +1308,14 @@ outerFun(8)();*/
 //   // console.log(currValue+100)
 //   console.log(arrNum[index]+100)
 // })
-
+/*
 const movements = [22, 45, -345, 88, -97, 87, -556, -55];
 for (const movement of movements)
   if (movement > 0) {
     console.log(`You deposited ${movement}`);
   } else {
     console.log(`You windrew ${Math.abs(movement)}`);
-  }
+  }*/
 /*
 const obj = { a: 1, b: 2, c: 3 };
 const fun=function(){
@@ -1412,4 +1412,18 @@ const calcAvergeageHumanAge = function (ages) {
 };
 calcAvergeageHumanAge([5, 2, 4, 9, 12, 19, 8]);
 */
-///////find///////
+
+var map = function (arr, fn) {
+  let transformation = [];
+  for (let i = 0; i < arr.length; i++) {
+    // Corrected initialization of i to 0
+    transformation.push(fn(arr[i], i));
+  }
+
+  return transformation;
+};
+const arr = [1, 2, 3];
+const fn = function (n) {
+  return n + 1;
+};
+console.log(map(arr, fn));
