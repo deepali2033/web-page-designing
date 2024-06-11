@@ -1412,7 +1412,7 @@ const calcAvergeageHumanAge = function (ages) {
 };
 calcAvergeageHumanAge([5, 2, 4, 9, 12, 19, 8]);
 */
-
+/*
 var map = function (arr, fn) {
   let transformation = [];
   for (let i = 0; i < arr.length; i++) {
@@ -1427,3 +1427,60 @@ const fn = function (n) {
   return n + 1;
 };
 console.log(map(arr, fn));
+jn;
+*/
+
+// function doSomething() {
+//   var fun = function () {
+//     console.log(this);
+//   };
+//   fun();
+// }
+
+// doSomething();
+/*
+let student_score = prompt("enter your number");
+if (student_score > 80 && student_score < 100) {
+  console.log("A");
+} else if (student_score > 70 && student_score < 89) {
+  console.log("B");
+} else if (student_score > 60 && student_score < 69) {
+  console.log("C");
+} else if (student_score > 50 && student_score < 59) {
+  console.log("D");
+} else {
+  console.log("F");
+}
+*/
+// for (let num = 0; num <= 100; num++) {
+//   if (num % 2 === 0) {
+//     console.log("num =", num);
+//   }
+// }
+// let user_name = prompt("enter your name");
+// console.log(`@${user_name}${user_name.length}`);
+let stu_marks = [23, 54, 87, 99, 69, 67];
+let sum = 0;
+for (let val of stu_marks) {
+  sum += val;
+}
+let avg = sum / stu_marks.length;
+console.log(avg);
+
+let items = [250, 234, 55, 456, 200, 400, 367];
+let idx = 0;
+for (let val of items) {
+  let offer = val / 10;
+  items[idx] = items[idx] - offer;
+  console.log(`${val} ofter applying offer = ${items[idx]} `);
+  idx++;
+}
+
+const countvowels = (str) => {
+  count = 0;
+  for (let char of str) {
+    console.log(char);
+    if (char === a);
+  }
+};
+countvowels("deepali");
