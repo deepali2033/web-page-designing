@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  /* overflow-x: hidden;
+  scroll-behavior: smooth; */
+  font-size: large;
+}
+body {
+  background-color: white;
+}
+.navbar {
+  background-color: #30c2d1;
+}
+/*<----------- home section------------> */
+.home-section {
+  border-bottom: 0.4rem solid #30c2d1;
+}
+.home-img {
+  mix-blend-mode: multiply;
+}
+.home-text span {
+  color: #30c2d1 !important;
+  font-weight: bolder;
+}
+.home-text h1 {
+  font-family: "Playfair Display", serif;
+}
+.text-btn {
+  background-color: #30c2d1;
+  border: none;
+}
+.traveler-imgs img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+/*<---------option section------> */
+.card {
+  /* box-shadow: 0px 1px 18px -2px; */
+}
+
+.footer-sidebar {
+  background-color: #79d5e0;
+}
+
+.send-your-query form {
+  flex-direction: column;
+}
+.send-your-query {
+  background-color: #9beaf2;
+}
+.line-item {
+  list-style: none;
+}

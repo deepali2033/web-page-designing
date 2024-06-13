@@ -23,7 +23,7 @@ a:hover {
   background-color: #c0392b;
 }
 #banner {
-  background: url(plant.jpg) no-repeat 0 0;
+  background: url(./../web-app/img/gallery/gallery-2.jpg) no-repeat 0 0;
   background-size: cover;
   color: #fff;
   padding-top: 5rem;
