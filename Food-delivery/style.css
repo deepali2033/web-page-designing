@@ -14,10 +14,22 @@ body {
 .navbar {
   background-color: #30c2d1;
 }
+.nav-item:visited {
+  background-color: white;
+  color: rgb(5, 108, 177);
+}
+.nav-item:hover {
+  background-color: white;
+  box-shadow: 1px 1px 6px 0px;
+  color: rgb(5, 108, 177);
+  border-radius: 4px;
+}
 /*<----------- home section------------> */
 .home-section {
   border-bottom: 0.4rem solid #30c2d1;
+  background: #d6eaed;
 }
+
 .home-img {
   mix-blend-mode: multiply;
 }
@@ -31,6 +43,15 @@ body {
 .text-btn {
   background-color: #30c2d1;
   border: none;
+  box-shadow: 1px 1px 6px 0px;
+}
+.text-btn:visited {
+  background-color: white;
+  color: #30c2d1;
+}
+.text-btn:hover {
+  background-color: white;
+  color: #1720a1;
 }
 .traveler-imgs img {
   width: 3rem;
@@ -41,7 +62,7 @@ body {
 }
 /*<---------option section------> */
 .card {
-  /* box-shadow: 0px 1px 18px -2px; */
+  box-shadow: 0px 1px 17px -7px;
 }
 
 .footer-sidebar {
@@ -56,4 +77,28 @@ body {
 }
 .line-item {
   list-style: none;
+}
+.line-item-icon {
+  margin-right: 1rem;
+  background-color: #30c2d1;
+  padding: 0.5rem;
+}
+h1.option-h::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background: #0b6087;
+  text-align: center;
+  display: block;
+  margin-top: 3rem;
+  margin-bottom: 14px;
+}
+h1.option-h::after {
+  content: "";
+  width: 40%;
+  height: 3px;
+  background: #30c2d1;
+  text-align: center;
+  display: block;
+  margin: 1.5rem auto;
 }

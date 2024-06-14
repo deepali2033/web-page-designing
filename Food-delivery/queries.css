@@ -1,0 +1,43 @@
+@media (max-width: 992px) {
+  .traveler-imgs img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .traveler-text {
+    font-size: 0.7rem;
+  }
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.971);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130vh;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .nav-btn {
+    justify-content: center;
+  }
+  .nav-item {
+    flex-direction: column;
+    gap: 3.9rem;
+  }
+  .nav-item:hover {
+    color: black;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-text {
+    text-align: center;
+  }
+  .btn-div {
+    justify-content: center;
+  }
+  .traveler {
+    justify-content: center;
+  }
+}
