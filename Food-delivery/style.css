@@ -24,6 +24,17 @@ body {
   color: rgb(5, 108, 177);
   border-radius: 4px;
 }
+.close-btn {
+  display: none;
+  /* width: 50px; */
+  font-size: 4rem;
+  position: absolute;
+  right: 2rem;
+  top: -1rem;
+  border: none;
+  mix-blend-mode: multiply;
+  background-color: transparent;
+}
 /*<----------- home section------------> */
 .home-section {
   border-bottom: 0.4rem solid #30c2d1;
@@ -44,6 +55,7 @@ body {
   background-color: #30c2d1;
   border: none;
   box-shadow: 1px 1px 6px 0px;
+  color: white;
 }
 .text-btn:visited {
   background-color: white;

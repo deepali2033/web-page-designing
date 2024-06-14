@@ -28,7 +28,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Travel Agency</a>
         <button
-          class="navbar-toggler bg-light"
+          class="navbar-toggler opne-btn bg-light"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -38,11 +38,33 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- <button
+          class="close-btn bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          &times;
+        </button> -->
         <div
           class="collapse main-nav navbar-collapse"
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav me-auto mb-2 ml-5 mb-lg-0">
+            <button
+              class="close-btn bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              &times;
+            </button>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
@@ -54,9 +76,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us </a>
             </li>
           </ul>
           <form class="nav-btn d-flex gap-3">
@@ -82,8 +101,13 @@
             </p>
 
             <div class="btn-div d-flex gap-3">
+              <a href="login.html" class="btn text-btn btn-outline-success"
+                >Log In</a
+              >
+              <a class="btn text-btn btn-outline-success">Sign In</a>
+              <!--               
               <button class="text-btn btn btn--big">lorem</button>
-              <button class="text-btn btn btn--big">lorem</button>
+              <button class="text-btn btn btn--big">lorem</button> -->
             </div>
             <div class="traveler d-flex gap-4 mt-4">
               <div class="traveler-imgs">
