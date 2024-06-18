@@ -16,8 +16,8 @@
   </head>
 
   <body>
-    <div class="container w-50">
-      <div class="mt-5">
+    <div class="container">
+      <div class="">
         <div class="input-group mb-3">
           <input
             type="text"
@@ -26,6 +26,7 @@
             aria-label="Recipient's username"
             aria-describedby="button-addon2"
             id="userName"
+            required
           />
           <button
             class="btn btn-outline-secondary text-white btn-primary"
@@ -43,8 +44,8 @@
               <th scope="col">Action</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
+          <tbody id="records">
+            <!-- <tr  >
               <th scope="row">1</th>
               <td>Mark</td>
               <td>
@@ -53,7 +54,7 @@
                 ></i
                 ><i class="dlt-btn text-white btn fa-solid fa-trash-can"></i>
               </td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
       </div>
