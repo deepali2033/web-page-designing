@@ -218,7 +218,13 @@
         <div class="row">
           <div class="col-md-6 mr-4">
             <h3 class="pb-3">Why Choose US</h3>
+
             <ul class="d-flex query-items flex-column gap-2 p-0">
+              <li class="line-item" id="records">
+                <i class="fa-solid fa-right-to-bracket line-item-icon"></i>A
+                Complete Travel Technology Company
+              </li>
+              <!--
               <li class="line-item">
                 <i class="fa-solid fa-right-to-bracket line-item-icon"></i>A
                 Complete Travel Technology Company
@@ -250,49 +256,59 @@
               <li class="line-item">
                 <i class="fa-solid fa-right-to-bracket line-item-icon"></i>A
                 Complete Travel Technology Company
-              </li>
-              <li class="line-item">
-                <i class="fa-solid fa-right-to-bracket line-item-icon"></i>A
-                Complete Travel Technology Company
-              </li>
+              </li> -->
             </ul>
           </div>
           <div class="col-md-6 ml-2">
             <div class="send-your-query p-5">
               <h1 class="mb-4">send your query</h1>
-              <form class="d-flex gap-3">
+              <form class="d-flex gap-3" action="#" method="post">
                 <div class="form-group">
+                  <label for="full_name"></label>
                   <input
-                    type="name"
+                    type="text"
                     class="form-control"
-                    id="exampleInputname"
+                    id="full_name"
                     aria-describedby="nameHelp"
                     placeholder="Enter Full Name"
+                    required
                   />
                 </div>
                 <div class="form-group">
                   <input
-                    type="number"
+                    type="tel"
+                    id="number"
                     class="form-control"
                     aria-describedby="nameHelp"
                     placeholder="Phone Number"
+                    required
                   />
                 </div>
                 <div class="form-group">
                   <input
                     type="email"
+                    id="email_id"
                     class="form-control"
                     aria-describedby="nameHelp"
                     placeholder="Email"
+                    required
                   />
                 </div>
                 <div class="form-group">
                   <textarea
                     class="form-control w-100"
                     placeholder="Type your query here"
+                    id="query"
+                    required
                   ></textarea>
                 </div>
-                <div class="btn btn--big btn-danger d-inline-block">Submit</div>
+                <button
+                  id="submit"
+                  type="submit"
+                  class="btn btn--big btn-danger d-inline-block"
+                >
+                  Submit
+                </button>
               </form>
             </div>
           </div>

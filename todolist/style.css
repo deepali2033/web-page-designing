@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.edit-btn {
+  background-color: aqua;
+  margin-right: 5px;
+}
+.dlt-btn {
+  background-color: red;
+}
