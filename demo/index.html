@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Splitter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Daily Expense Splitter</h1>
+      <form id="expenseForm">
+        <input type="text" id="item" placeholder="Item" required />
+        <input type="number" id="amount" placeholder="Amount" required />
+        <input type="date" id="date" required />
+        <button type="submit">Add Expense</button>
+      </form>
+      <div id="expenseList"></div>
+      <h3>Total Amount: <span id="totalAmount">0</span></h3>
+      <h3>Each Person Owes: <span id="splitAmount">0</span></h3>
+    </div>
+
+    <script>
+      const form = document.getElementById("expenseForm");
+      let totalAmount = 0;
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const item = document.getElementById("item").value;
+        const amount = parseFloat(document.getElementById("amount").value);
+        const date = document.getElementById("date").value;
+
+        totalAmount += amount;
+
+        const expenseList = document.getElementById("expenseList");
+        const listItem = document.createElement("div");
+        listItem.innerHTML = `${item} - ${amount} (Date: ${date})`;
+        expenseList.appendChild(listItem);
+
+        document.getElementById("totalAmount").textContent = totalAmount;
+        document.getElementById("splitAmount").textContent = (
+          totalAmount / 2
+        ).toFixed(2);
+      });
+    </script>
+  </body>
+</html>

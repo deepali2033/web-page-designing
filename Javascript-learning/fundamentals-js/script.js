@@ -1459,28 +1459,33 @@ if (student_score > 80 && student_score < 100) {
 // }
 // let user_name = prompt("enter your name");
 // console.log(`@${user_name}${user_name.length}`);
-let stu_marks = [23, 54, 87, 99, 69, 67];
-let sum = 0;
-for (let val of stu_marks) {
-  sum += val;
-}
-let avg = sum / stu_marks.length;
-console.log(avg);
+// let stu_marks = [23, 54, 87, 99, 69, 67];
+// let sum = 0;
+// for (let val of stu_marks) {
+//   sum += val;
+// }
+// let avg = sum / stu_marks.length;
+// console.log(avg);
 
-let items = [250, 234, 55, 456, 200, 400, 367];
-let idx = 0;
-for (let val of items) {
-  let offer = val / 10;
-  items[idx] = items[idx] - offer;
-  console.log(`${val} ofter applying offer = ${items[idx]} `);
-  idx++;
-}
+// let items = [250, 234, 55, 456, 200, 400, 367];
+// let idx = 0;
+// for (let val of items) {
+//   let offer = val / 10;
+//   items[idx] = items[idx] - offer;
+//   console.log(`${val} ofter applying offer = ${items[idx]} `);
+//   idx++;
+// }
 
-const countvowels = (str) => {
-  count = 0;
-  for (let char of str) {
-    console.log(char);
-    if (char === a);
-  }
-};
-countvowels("deepali");
+// const countvowels = (str) => {
+//   count = 0;
+//   for (let char of str) {
+//     console.log(char);
+//     if (char === a);
+//   }
+// };
+// countvowels("deepali");
+
+num = prompt("enter number here");
+if (num / 2) {
+  console.log("even");
+} else console.log("odd");
